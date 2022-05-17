@@ -1,0 +1,6 @@
+.main-block {
+/*   background: red; */
+  display: flex;
+  flex-grow: 1;
+  background: rgb(6, 23, 30, 0.2);
+}

@@ -1,0 +1,35 @@
+.navi-bar {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.navi-bar--font {
+  font-size: clamp(0.3rem, 1vw, 0.8rem);
+}
+
+.navi-bar--bg {
+  background: rgb(6, 23, 30, 0.2);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgb(214, 214, 214, 0.1);
+/*   border-left: 1px solid rgb(214, 214, 214, 0.1); */
+/*   border-right: 1px solid rgb(214, 214, 214, 0.1); */
+}
+
+.navi-bar div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-inline: clamp(0.6rem, 2vw, 1.5rem);
+}
+
+.navi-bar div:hover {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.navi-bar div a {
+  color: #d1d1d1;
+  text-decoration: none;
+}

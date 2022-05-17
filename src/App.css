@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  margin: 0 auto;
+  height: 90vh;
+  min-width: 90vw;    
+  box-shadow: -5px -4px 25px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.container--font {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+.container--bg {
+/*   background-color: black; */
+  background-image: url(https://res.cloudinary.com/yaif/image/upload/e_brightness:-82/v1651579904/cool-geometric-triangular-figure-neon-laser-light-great-background_tcdrdq.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+/*   opacity: 0.3; */
+}
+
+.container__main {
+  display:flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.container__main-top {
+  display: flex;
+  flex-grow: 1;
+  max-height: 10%;
+}
+
+.container__main-bottom {
+  display: flex;
+  flex-grow: 1;
+  max-height: 90%;
+}

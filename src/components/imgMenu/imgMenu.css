@@ -1,0 +1,44 @@
+.img-menu {
+/*   background: rgb(0, 0, 0,0.4); */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 18%;
+}
+
+.img-menu__el {
+  display: flex;
+  flex-grow: 1;
+  max-height: 20%;
+  position: relative;
+}
+
+.img-menu__el img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+
+.img-menu__el-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+/*   border-left: clamp(2px, 1vw, 7px) solid rgb(238, 47, 47);
+  background-image: linear-gradient(to right, rgb(255,0,0,0.8),rgb(255,0,0,0.0)); */
+  opacity: 0.7;
+  cursor: pointer;
+  color: white;
+}
+
+.img-menu__el:hover > .img-menu__el-bg {
+  border-left: clamp(2px, 1vw, 7px) solid rgb(238, 47, 47);
+  background-image: linear-gradient(to right, rgb(255,0,0,0.8),rgb(255,0,0,0.0));
+}
+
+.img-menu__el-bg--click {
+  border-left: clamp(2px, 1vw, 7px) solid rgb(238, 47, 47);
+  background-image: linear-gradient(to right, rgb(255,0,0,0.8),rgb(255,0,0,0.0)); 
+}
