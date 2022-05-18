@@ -2,7 +2,7 @@
 /*   background: rgb(0, 0, 0,0.4); */
   display: flex;
   flex-grow: 1;
-  flex-direction: columns;
+  flex-direction: column;
   max-width: 5%;
   position: relative;
   z-index: 2;
@@ -28,4 +28,37 @@
 .right-block__menu svg {
   color: #d1d1d1;
   font-size: clamp(0.8rem, 2.0vw, 1.5rem);
+}
+
+.right-block__btns {
+  display: flex;
+  flex-grow: 1;
+  max-height: 90%;
+}
+
+.hero-btns {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+/*   max-width: 100%; */
+}
+
+.hero-btns div {
+  display: flex;
+  flex-grow: 1;
+  max-height: 25%;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: clamp(0.4rem, 1.5vw, 1.0rem);
+/*   max-width: 100%; */
+  color: white;
+}
+
+.hero-btns div:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to top, rgb(255,0,0,0.6),rgb(255,0,0,0.0));
+  border-radius: 0.1rem;
+/*   box-shadow: -8px 10px 6px -4px rgb(0, 0, 0); */
 }

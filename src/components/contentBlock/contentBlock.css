@@ -64,4 +64,15 @@
   object-position: center;
   z-index: 1;
   transform: translate(-8%,-6%);
+  filter: drop-shadow(5px 5px 4px #000000);
 }
+
+/* .content-block__img img:hover {
+    animation: example 1s;
+}
+
+@keyframes example {
+  0% {transform: translate(-8%,-6%);}
+  50% {transform: translate(-10%,-6%);}
+  100% {transform: translate(-8%,-6%);}
+} */

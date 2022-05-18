@@ -4,6 +4,12 @@ export const heroes = [
 			name: 'first',
       desc: `Praesent aliquet leo sit amet vulputate vestibulum.
             Praesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`,
+      desc2: `Zraesent alit amet vulputate vestibulum.
+            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`,
+      desc3: `Aesent aliquet leo sit amet vulputate vestibulum.
+            Praesent ali vestibulum.`,
+      desc4: `Bent alilputate vestibulum.
+            Praesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`,
       img: 'https://res.cloudinary.com/yaif/image/upload/v1628780124/asddfss_axyukr.png',
       avatar: 'https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg'
 		},
