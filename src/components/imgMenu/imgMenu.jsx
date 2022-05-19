@@ -8,12 +8,12 @@ function ImgMenu(props) {
 				<div
 					key={obj.id}
 					className="img-menu__el"
-					onClick={() => props.setIdActiveBg(obj.id)}
+					onClick={() => props.setIdActiveAvatar(obj.id)}
 				>
 					<img src={obj.avatar} />
 					<div
 						className={
-							props.idActiveBg === obj.id
+							props.idActiveAvatar === obj.id
 								? 'img-menu__el-bg img-menu__el-bg--click'
 								: 'img-menu__el-bg'
 						}

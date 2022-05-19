@@ -9,7 +9,7 @@ function ContentBlock(props) {
           <p>{props.objData.name}</p>
         </div>
         <div className="content-block__text-desc">
-          {props.objData.desc}
+          {props.objData.desc[props.whichHeroBtnsActiv]}
           <p>Read more...</p>
         </div>
       </div>

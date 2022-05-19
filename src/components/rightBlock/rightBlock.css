@@ -62,3 +62,8 @@
   border-radius: 0.1rem;
 /*   box-shadow: -8px 10px 6px -4px rgb(0, 0, 0); */
 }
+
+.hero-btn-activated {
+  background-image: linear-gradient(to top, rgb(255,0,0,0.6),rgb(255,0,0,0.0));
+  border-radius: 0.1rem;
+}

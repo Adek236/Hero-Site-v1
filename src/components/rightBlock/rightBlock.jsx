@@ -3,18 +3,44 @@ import './rightBlock.css';
 import MenuIcon from '@mui/icons-material/Menu';
 
 function RightBlock(props) {
-  
+
+
+  // need to separate into new file
   const HeroBtns = () => {
+    
+    const activatedBtn = (id) => {
+      props.setWhichHeroBtnsActiv(id);
+    }
+
     return (
       <div className="hero-btns">
-        <div>Button1</div>
-        <div>Button2</div>
-        <div>Button3</div>
-        <div>Button4</div>
+        <div 
+          className={props.whichHeroBtnsActiv == 0 ? "hero-btn-activated" : ""} 
+          onClick={()=> activatedBtn(0)}
+        >
+          Button1
+        </div>
+        <div
+          className={props.whichHeroBtnsActiv == 1 ? "hero-btn-activated" : ""}
+          onClick={()=> activatedBtn(1)}
+        >
+          Button2
+        </div>
+        <div 
+          className={props.whichHeroBtnsActiv == 2 ? "hero-btn-activated" : ""}
+          onClick={()=> activatedBtn(2)}
+        >
+          Button3
+        </div>
+        <div 
+          className={props.whichHeroBtnsActiv == 3 ? "hero-btn-activated" : ""}
+          onClick={()=> activatedBtn(3)}
+        >
+          Button4
+        </div>
       </div>
     );
   }
-  
   
   return (
     <div className="right-block right-block--bg">
@@ -27,5 +53,5 @@ function RightBlock(props) {
     </div>
   );
 }
-// <div className={props.showHeroBtns ? "test": ""}>A</div>
+// props.showHeroBtns need to change from true/false to string which page
 export default RightBlock;

@@ -7,7 +7,9 @@ import NaviBar from './components/naviBar/naviBar';
 import Heroes from './pages/heroes/heroes'
 
 function App() {
+  // showHeroBtns need to change from true/false to string which page
   const [showHeroBtns, setShowHeroBtns] = useState(false);
+  const [whichHeroBtnsActiv, setWhichHeroBtnsActiv] = useState(0);
 
   return (
     <main className="container container--font container--bg">
@@ -19,11 +21,24 @@ function App() {
           </div>
           <div className="container__main-bottom">
             <Routes>
-              <Route exact path='/heroes' element={<Heroes setShowHeroBtns={setShowHeroBtns} />} />
+              <Route
+                exact
+                path='/heroes'
+                element={
+                  <Heroes
+                    setShowHeroBtns={setShowHeroBtns}
+                    whichHeroBtnsActiv={whichHeroBtnsActiv}
+                  />
+                }
+              />
             </Routes>
           </div>
         </div>
-        <RightBlock showHeroBtns={showHeroBtns} />
+        <RightBlock
+          showHeroBtns={showHeroBtns}
+          whichHeroBtnsActiv={whichHeroBtnsActiv}
+          setWhichHeroBtnsActiv={setWhichHeroBtnsActiv}
+        />
       </BrowserRouter>
     </main>
   );

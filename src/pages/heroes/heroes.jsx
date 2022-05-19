@@ -5,12 +5,12 @@ import ContentBlock from '../../components/contentBlock/contentBlock';
 import { heroes } from '../../data/data';
 
 function Heroes(props) {
-  const [idActiveBg, setIdActiveBg] = useState(1);
+  const [idActiveAvatar, setIdActiveAvatar] = useState(1);
 
   const getObjFromData = () => {
-    return heroes.find(obj => obj.id === idActiveBg)
+    return heroes.find(obj => obj.id === idActiveAvatar)
   }
-
+  
 	useEffect(() => {
 	  props.setShowHeroBtns(true);
 	}, []);
@@ -18,11 +18,14 @@ function Heroes(props) {
   return (
     <div className="main-block">
         <ImgMenu 
-          idActiveBg={idActiveBg}
-          setIdActiveBg={setIdActiveBg}
+          idActiveAvatar={idActiveAvatar}
+          setIdActiveAvatar={setIdActiveAvatar}
           data={heroes}
         />
-        <ContentBlock objData={getObjFromData()} />
+        <ContentBlock 
+          objData={getObjFromData()} 
+          whichHeroBtnsActiv={props.whichHeroBtnsActiv}
+          />
       </div>
     
   );
