@@ -5,9 +5,10 @@ import LeftBlock from './components/leftBlock/leftBlock'
 import RightBlock from './components/rightBlock/rightBlock'
 import NaviBar from './components/naviBar/naviBar';
 import Heroes from './pages/heroes/heroes'
+import Home from './pages/home/home'
 
 function App() {
-  // showHeroBtns need to change from true/false to string which page
+  // showHeroBtns need to change from true/false to string with which page
   const [showHeroBtns, setShowHeroBtns] = useState(false);
   const [whichHeroBtnsActiv, setWhichHeroBtnsActiv] = useState(0);
 
@@ -28,7 +29,15 @@ function App() {
                   <Heroes
                     setShowHeroBtns={setShowHeroBtns}
                     whichHeroBtnsActiv={whichHeroBtnsActiv}
+                    setWhichHeroBtnsActiv={setWhichHeroBtnsActiv}
                   />
+                }
+              />
+              <Route
+                exact
+                path='/'
+                element={
+                  <Home />
                 }
               />
             </Routes>

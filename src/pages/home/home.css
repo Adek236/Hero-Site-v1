@@ -1,0 +1,22 @@
+.home-block {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+/*   width: 100%; */
+/*   max-heigth: 70%; */
+/*   position: relative; */
+}
+
+.home-block__banner {
+  display: flex;
+  flex-grow: 1;
+  max-height: 70%;
+}
+
+/
+
+/* .video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */

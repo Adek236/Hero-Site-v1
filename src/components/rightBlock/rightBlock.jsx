@@ -15,7 +15,7 @@ function RightBlock(props) {
     return (
       <div className="hero-btns">
         <div 
-          className={props.whichHeroBtnsActiv == 0 ? "hero-btn-activated" : ""} 
+          className={props.whichHeroBtnsActiv == 0 ? "hero-btn-activated" : ""}
           onClick={()=> activatedBtn(0)}
         >
           Button1
@@ -53,5 +53,5 @@ function RightBlock(props) {
     </div>
   );
 }
-// props.showHeroBtns need to change from true/false to string which page
+// props.showHeroBtns need to change from true/false to string with which page
 export default RightBlock;

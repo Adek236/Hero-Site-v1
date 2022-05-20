@@ -10,7 +10,6 @@ function ContentBlock(props) {
         </div>
         <div className="content-block__text-desc">
           {props.objData.desc[props.whichHeroBtnsActiv]}
-          <p>Read more...</p>
         </div>
       </div>
       <div className="content-block__img">

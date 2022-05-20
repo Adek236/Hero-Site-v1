@@ -21,6 +21,7 @@ function Heroes(props) {
           idActiveAvatar={idActiveAvatar}
           setIdActiveAvatar={setIdActiveAvatar}
           data={heroes}
+          setWhichHeroBtnsActiv={props.setWhichHeroBtnsActiv}
         />
         <ContentBlock 
           objData={getObjFromData()} 

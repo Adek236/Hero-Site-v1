@@ -8,7 +8,11 @@ function ImgMenu(props) {
 				<div
 					key={obj.id}
 					className="img-menu__el"
-					onClick={() => props.setIdActiveAvatar(obj.id)}
+					onClick={() => {
+            props.setIdActiveAvatar(obj.id);
+            // TODO: if whichbtn is 0 do not this \/
+            props.setWhichHeroBtnsActiv(0);
+          }}
 				>
 					<img src={obj.avatar} />
 					<div
