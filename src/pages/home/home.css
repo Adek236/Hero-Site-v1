@@ -8,12 +8,35 @@
 }
 
 .home-block__banner {
+/*   position: relative; */
   display: flex;
   flex-grow: 1;
-  max-height: 70%;
+  max-height: 50%;
+  align-items: center;
+  justify-content: center;
+/*   background: blue; */
 }
 
-/
+.home-block__latest {
+  position: block;
+  display: flex;
+  flex-grow: 1;
+  max-height: 50%;
+/*   background: green; */
+  z-index: 1;
+/*   transform: translateY(-10%); */
+}
+
+.home-block__latest--bg {
+  background: rgb(6, 23, 30, 0.2);
+  border-top: 1px solid rgb(214, 214, 214, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.home-block__latest div {
+  display: flex;
+  flex-grow: 1;
+}
 
 /* .video {
   position: absolute;

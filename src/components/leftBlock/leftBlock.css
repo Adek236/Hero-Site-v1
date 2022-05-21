@@ -3,6 +3,7 @@
   flex-grow: 1;
   max-width: 5%;
   flex-direction: column;
+  z-index: 2;
 }
 
 .left-block--bg {

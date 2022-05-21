@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './heroes.css';
-import ImgMenu from '../../components/imgMenu/imgMenu';
-import ContentBlock from '../../components/contentBlock/contentBlock';
+import ImgMenu from './components/imgMenu/imgMenu';
+import ContentBlock from './components/contentBlock/contentBlock';
 import { heroes } from '../../data/data';
 
 function Heroes(props) {
@@ -16,7 +16,7 @@ function Heroes(props) {
 	}, []);
   
   return (
-    <div className="main-block">
+    <div className="heroes-block">
         <ImgMenu 
           idActiveAvatar={idActiveAvatar}
           setIdActiveAvatar={setIdActiveAvatar}
