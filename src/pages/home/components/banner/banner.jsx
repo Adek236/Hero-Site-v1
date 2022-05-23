@@ -13,7 +13,7 @@ function Banner() {
           type="video/mp4"
         />
         Your browser does not support the video tag.
-      </video>
+       </video>
       <div className="banner__video--mod"></div>
       <div className="banner__box">
         <div className="banner__box__logo">Hero <span>G</span>ame</div>  
