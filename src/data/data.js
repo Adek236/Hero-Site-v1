@@ -100,3 +100,36 @@ export const heroes = [
     avatar: 'https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg'
   }
 ];
+
+export const news = [
+  {
+    id: 0,
+    category: "Update",
+    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    title: "New mechanics",
+    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
+            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
+    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
+            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+  },
+  {
+    id: 1,
+    category: "Media",
+    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    title: "New epic trailer",
+    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
+            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
+    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
+            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+  },
+  {
+    id: 2,
+    category: "Community",
+    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    title: "New event in London",
+    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
+            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
+    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
+            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+  }
+];

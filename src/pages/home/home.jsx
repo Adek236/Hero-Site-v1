@@ -1,8 +1,8 @@
 import React from 'react';
 import './home.css';
-import { heroes } from '../../data/data';
+import { news as data } from '../../data/data';
 import Banner from './components/banner/banner';
-
+import News from './components/news/news';
 
 function Home(props) {
   return (
@@ -11,9 +11,9 @@ function Home(props) {
         <Banner />
        </div>
        <div className="home-block__latest home-block__latest--bg">
-        <div>News1</div>
-        <div>News2</div>
-        <div>News3</div>
+        <News data={data[0]} border={true}/>
+        <News data={data[1]} border={true}/>
+        <News data={data[2]} border={false}/>
        </div>
     </div>
      
