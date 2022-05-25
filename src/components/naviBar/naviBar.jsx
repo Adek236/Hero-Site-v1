@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function NaviBar() {
   return (
-    <div className="navi-bar navi-bar--font navi-bar--bg">
+    <nav className="navi-bar navi-bar--font navi-bar--bg">
       <div>
         <Link to="/"> Home </Link>
       </div>
@@ -20,7 +20,7 @@ function NaviBar() {
       <div>
         <Link to="/support"> Support </Link>
       </div>
-    </div>
+    </nav>
   );
 }
 export default NaviBar;
