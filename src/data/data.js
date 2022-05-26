@@ -106,7 +106,7 @@ export const news = [
     id: 0,
     category: "Update",
     img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
-    title: "New mechanics",
+    title: "New character Elia",
     short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
             Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
     long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
