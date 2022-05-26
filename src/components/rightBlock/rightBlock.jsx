@@ -1,6 +1,6 @@
 import React from 'react';
 import './rightBlock.css';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 
 function RightBlock(props) {
 
@@ -45,7 +45,6 @@ function RightBlock(props) {
   return (
     <div className="right-block right-block--bg">
       <div className="right-block__menu">
-        <MenuIcon />
       </div>
       <div className="right-block__btns">
         {props.showHeroBtns ? <HeroBtns /> : ""}
@@ -53,5 +52,6 @@ function RightBlock(props) {
     </div>
   );
 }
+        // <MenuIcon />
 // props.showHeroBtns need to change from true/false to string with which page
 export default RightBlock;

@@ -40,3 +40,9 @@
   flex-grow: 1;
   max-height: 90%;
 }
+
+@media only screen and (max-width: 667px) {
+  .container__main-top {
+    max-height: 5%;
+}
+}

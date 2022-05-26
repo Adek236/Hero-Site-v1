@@ -18,18 +18,37 @@
 /*   border-right: 1px solid rgb(214, 214, 214, 0.1); */
 }
 
-.navi-bar div {
+.navi-bar a {
   display: flex;
   align-items: center;
   height: 100%;
   margin-inline: clamp(0.6rem, 2vw, 1.5rem);
 }
 
-.navi-bar div:hover {
+.navi-bar a:hover {
   border-bottom: 1px solid #d1d1d1;
 }
 
-.navi-bar div a {
+.navi-bar a {
   color: #d1d1d1;
   text-decoration: none;
+}
+
+.navi-bar__hidden {
+  display: none;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 820px) {
+  .navi-bar {
+    justify-content: space-between;
+    padding-right: 5%;
+  }
+  .navi-bar a {
+    display: none;
+  }
+  .navi-bar__hidden {
+    display: flex;
+  }
 }
