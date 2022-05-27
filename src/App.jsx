@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import LeftBlock from './components/leftBlock/leftBlock'
-import RightBlock from './components/rightBlock/rightBlock'
+import LeftBlock from './components/leftBlock/leftBlock';
+import RightBlock from './components/rightBlock/rightBlock';
 import NaviBar from './components/naviBar/naviBar';
-import Heroes from './pages/heroes/heroes'
-import Home from './pages/home/home'
-import News from './pages/news/news'
+import Heroes from './pages/heroes/heroes';
+import Home from './pages/home/home';
+import News from './pages/news/news';
 
 function App() {
   // showHeroBtns need to change from true/false to string with which page

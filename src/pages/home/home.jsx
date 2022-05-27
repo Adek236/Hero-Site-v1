@@ -16,16 +16,7 @@ function Home(props) {
         <Latest data={data[2]} border={false}/>
        </div>
     </div>
-     
   );
 }
-
- // <video className="video" muted autoPlay>
- //        <source
- //          src="https://res.cloudinary.com/yaif/video/upload/v1653055556/Mountain_baajzf.mp4"
- //          type="video/mp4"
- //        />
- //        Your browser does not support the video tag.
- //      </video> 
 
 export default Home;

@@ -41,8 +41,12 @@
   max-height: 90%;
 }
 
-@media only screen and (max-width: 667px) {
+/* @media only screen and (max-width: 666px) { */
+@media only screen and (orientation:portrait) {
   .container__main-top {
     max-height: 5%;
+  }
+  .container__main-bottom {
+  max-height: 95%;
 }
 }
