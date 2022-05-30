@@ -2,5 +2,14 @@
 /*   background: red; */
   display: flex;
   flex-grow: 1;
+/*   flex-direction: column; */
   background: rgb(6, 23, 30, 0.2);
+/*   background: blue; */
+  width: 95%;
+}
+
+@media only screen and (orientation:portrait) {
+  .heroes-block {
+    flex-direction: column;
+  }
 }

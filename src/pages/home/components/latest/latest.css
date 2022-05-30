@@ -1,13 +1,15 @@
 .home-latest-block {
+  position: relative;
   display:flex;
   flex-grow:1;
   flex-direction:column;
+  align-items: center;
+  margin: .3rem;
 /*   max-width: 33.3%; */
 /*   flex-wrap: wrap; */
   max-height: 100%;
-  position: relative;
-  align-items: center;
 /*   background: blue; */
+  border: 1px solid rgb(214, 214, 214, 0.1); 
 }
 
 .home-latest-block:hover {

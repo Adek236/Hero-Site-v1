@@ -43,10 +43,14 @@
 
 /* @media only screen and (max-width: 666px) { */
 @media only screen and (orientation:portrait) {
+/*   .container {
+    flex-direction: column;
+  } */
   .container__main-top {
     max-height: 5%;
   }
   .container__main-bottom {
-  max-height: 95%;
+    max-height: 95%;
+  }
 }
-}
+

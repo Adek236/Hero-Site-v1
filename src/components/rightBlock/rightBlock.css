@@ -68,8 +68,14 @@
   border-radius: 0.1rem;
 }
 
-@media only screen and (max-width: 844px) {
+/* @media only screen and (max-width: 844px) {
   .right-block {
-    display: none;
+    min-width: 5%;
   }
-}
+} */
+
+/* @media only screen and (orientation:portrait) {
+  .right-block {
+    flex-direction: row;
+  }
+} */
