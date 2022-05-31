@@ -4,6 +4,7 @@ import './App.css';
 import LeftBlock from './components/leftBlock/leftBlock';
 import RightBlock from './components/rightBlock/rightBlock';
 import NaviBar from './components/naviBar/naviBar';
+import Footer from './components/footer/footer';
 import Heroes from './pages/heroes/heroes';
 import Home from './pages/home/home';
 import News from './pages/news/news';
@@ -49,6 +50,9 @@ function App() {
                 }
               />
             </Routes>
+          </div>
+          <div className="container__main-footer">
+            <Footer />
           </div>
         </div>
         <RightBlock

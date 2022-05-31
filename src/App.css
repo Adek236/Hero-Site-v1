@@ -41,6 +41,24 @@
   max-height: 90%;
 }
 
+.container__main-footer {
+  display: none;
+  flex-grow: 1;
+  max-height: 5%;
+}
+
+@media only screen and (max-width: 844px) {
+  .container__main-top {
+    min-height: 5%;
+  }
+  .container__main-bottom {
+    max-height: 87%;
+  }
+  .container__main-footer {
+    display: flex; 
+/*     max-height: 5%; */
+  }
+}
 /* @media only screen and (max-width: 666px) { */
 @media only screen and (orientation:portrait) {
 /*   .container {

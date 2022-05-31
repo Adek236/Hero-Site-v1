@@ -4,6 +4,7 @@
   flex-grow: 1;
   flex-direction: column;
   max-width: 5%;
+  min-width: 5%;
   position: relative;
   z-index: 2;
 /*   background: red; */
@@ -68,11 +69,11 @@
   border-radius: 0.1rem;
 }
 
-/* @media only screen and (max-width: 844px) {
+@media only screen and (max-width: 844px) {
   .right-block {
-    min-width: 5%;
+    display:none;
   }
-} */
+}
 
 /* @media only screen and (orientation:portrait) {
   .right-block {

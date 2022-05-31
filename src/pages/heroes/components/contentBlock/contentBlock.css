@@ -6,6 +6,7 @@
   max-width: 82%;
   color: white;
 /*   background: red; */
+/*   position: relative; */
 }
 
 .content-block__text {
@@ -43,11 +44,19 @@
   flex-direction: column;
   height: 70%;
   padding: 1rem;
+/*   align-text: center; */
   font-size: calc(0.2em + 1.2vmin);
 }
 
-.content-block__text-desc p {
-  margin-top: .5rem;
+.content-block__text-desc 
+span {
+  margin-top: 0.5rem;
+}
+
+.content-block__text-desc 
+span:hover {
+  cursor: pointer;
+  color: #a8a8a8;
 }
 
 .content-block__img {

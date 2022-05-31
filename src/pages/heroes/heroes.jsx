@@ -26,6 +26,7 @@ function Heroes(props) {
         <ContentBlock 
           objData={getObjFromData()} 
           whichHeroBtnsActiv={props.whichHeroBtnsActiv}
+          setWhichHeroBtnsActiv={props.setWhichHeroBtnsActiv}
           />
       </div>
     

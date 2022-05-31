@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+/*   z-index: 2; */
+/*   max-height: 100%; */
+}
+
+.footer--bg {
+  background: rgb(6, 23, 30, 0.2);
+  border-top: 1px solid rgb(214, 214, 214, 0.1);
+/*   border-left: 1px solid rgb(214, 214, 214, 0.1); */
+/*   border-right: 1px solid rgb(214, 214, 214, 0.1); */
+}
+
+.footer svg {
+  margin-inline: 0.2rem;
+  color: rgb(174, 167, 167);
+  font-size: clamp(1rem, 1.5vw, 2.0rem);
+}
+
+.footer svg:hover {
+  color: rgb(249, 118, 118);
+  cursor: pointer;
+}

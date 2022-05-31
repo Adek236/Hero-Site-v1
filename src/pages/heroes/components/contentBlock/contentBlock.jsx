@@ -2,6 +2,13 @@ import React from 'react';
 import './contentBlock.css';
 
 function ContentBlock(props) {
+
+  const nextDesc = () => {
+    const whichHeroBtnsActiv =
+      props.whichHeroBtnsActiv != 3 ? props.whichHeroBtnsActiv + 1 : 0;
+    props.setWhichHeroBtnsActiv(whichHeroBtnsActiv);
+  }
+
   return (
     <div className="content-block">
       <div className="content-block__text">
@@ -10,10 +17,11 @@ function ContentBlock(props) {
         </div>
         <div className="content-block__text-desc">
           {props.objData.desc[props.whichHeroBtnsActiv]}
+          <span onClick={() => nextDesc()}>Read more...</span>
         </div>
       </div>
       <div className="content-block__img">
-      <img src={props.objData.img}></img>
+        <img src={props.objData.img}></img>
       </div>
     </div>
   );
