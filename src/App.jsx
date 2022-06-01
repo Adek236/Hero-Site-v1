@@ -8,6 +8,7 @@ import Footer from './components/footer/footer';
 import Heroes from './pages/heroes/heroes';
 import Home from './pages/home/home';
 import News from './pages/news/news';
+import Game from './pages/game/game';
 
 function App() {
   // showHeroBtns need to change from true/false to string with which page
@@ -26,6 +27,33 @@ function App() {
             <Routes>
               <Route
                 exact
+                path='/'
+                element={
+                  <Home 
+                    setShowHeroBtns={setShowHeroBtns}
+                  />
+                }
+              />
+              <Route
+                exact
+                path='/news'
+                element={
+                  <News 
+                    setShowHeroBtns={setShowHeroBtns}    
+                  />
+                }
+              />
+              <Route
+                exact
+                path='/game'
+                element={
+                  <Game 
+                    setShowHeroBtns={setShowHeroBtns}
+                  />
+                }
+              />
+              <Route
+                exact
                 path='/heroes'
                 element={
                   <Heroes
@@ -33,20 +61,6 @@ function App() {
                     whichHeroBtnsActiv={whichHeroBtnsActiv}
                     setWhichHeroBtnsActiv={setWhichHeroBtnsActiv}
                   />
-                }
-              />
-              <Route
-                exact
-                path='/'
-                element={
-                  <Home />
-                }
-              />
-              <Route
-                exact
-                path='/news'
-                element={
-                  <News />
                 }
               />
             </Routes>

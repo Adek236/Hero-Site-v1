@@ -1,0 +1,37 @@
+.game-block {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-block h1 {
+ font-family: 'Smooch', cursive;
+ font-weight: 400;
+ font-size: clamp(2rem, 7.0vw, 6rem);
+}
+
+.game-block h1 span {
+ color: red;
+}
+
+.game-block h2 {
+ font-size: clamp(1rem, 2.5vw, 5rem);
+}
+
+.game-block button {
+  margin-top: clamp(1rem, 5.0vw, 3rem);
+  padding: clamp(0.2rem, 1.0vw, 1rem);
+  background: rgb(255,0,0,0.2);
+  border-radius: 0.1rem;
+  animation: pulse 2s infinite;
+  color: rgb(255, 255, 255, 0.5);
+  border: none;
+}
+
+.game-block button:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255, 0.85);
+  background: rgb(255,0,0,0.35);
+}

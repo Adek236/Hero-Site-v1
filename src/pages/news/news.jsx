@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './news.css';
 import { news as data } from '../../data/data';
 
 function News(props) {
+
+  useEffect(() => {
+	  props.setShowHeroBtns(false);
+	}, []);
+  
   return (
     <div className="news-block">
       <div className="news-block__box">
