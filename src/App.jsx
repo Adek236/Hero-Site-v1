@@ -5,6 +5,7 @@ import LeftBlock from './components/leftBlock/leftBlock';
 import RightBlock from './components/rightBlock/rightBlock';
 import NaviBar from './components/naviBar/naviBar';
 import Footer from './components/footer/footer';
+import Modal from './components/modal/modal';
 import Heroes from './pages/heroes/heroes';
 import Home from './pages/home/home';
 import News from './pages/news/news';
@@ -74,6 +75,7 @@ function App() {
           whichHeroBtnsActiv={whichHeroBtnsActiv}
           setWhichHeroBtnsActiv={setWhichHeroBtnsActiv}
         />
+        <Modal />
       </BrowserRouter>
     </main>
   );

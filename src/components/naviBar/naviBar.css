@@ -39,6 +39,10 @@
   align-items: center;
 }
 
+.navi-bar__hidden--menu svg:hover {
+  color: white;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 844px) {
   .navi-bar {

@@ -17,10 +17,11 @@ function NaviBar() {
       <div className="navi-bar__hidden">
         <GamepadIcon />
       </div>
-      <div className="navi-bar__hidden">  
+      <div className="navi-bar__hidden navi-bar__hidden--menu">  
         <MenuIcon />
       </div>
     </nav>
   );
 }
+
 export default NaviBar;
