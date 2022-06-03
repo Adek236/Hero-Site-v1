@@ -14,7 +14,12 @@ import Game from './pages/game/game';
 function App() {
   // showHeroBtns need to change from true/false to string with which page
   const [showHeroBtns, setShowHeroBtns] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [whichHeroBtnsActiv, setWhichHeroBtnsActiv] = useState(0);
+
+  const showModalToggle = () => {
+    setShowModal(prev => !prev);
+  }
 
   return (
     <main className="container container--font container--bg">
@@ -22,7 +27,9 @@ function App() {
         <LeftBlock />
         <div className="container__main">
           <div className="container__main-top">
-            <NaviBar />
+            <NaviBar  
+              showModalToggle={showModalToggle}
+            />
           </div>
           <div className="container__main-bottom">
             <Routes>
@@ -75,7 +82,10 @@ function App() {
           whichHeroBtnsActiv={whichHeroBtnsActiv}
           setWhichHeroBtnsActiv={setWhichHeroBtnsActiv}
         />
-        <Modal />
+        <Modal 
+          showModal={showModal}
+          showModalToggle={showModalToggle}
+        />
       </BrowserRouter>
     </main>
   );

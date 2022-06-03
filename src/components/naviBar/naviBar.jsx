@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import GamepadIcon from '@mui/icons-material/Gamepad';
 
-function NaviBar() {
+function NaviBar(props) {
   return (
     <nav className="navi-bar navi-bar--font navi-bar--bg">
       <Link to="/"> Home </Link>
@@ -17,7 +17,9 @@ function NaviBar() {
       <div className="navi-bar__hidden">
         <GamepadIcon />
       </div>
-      <div className="navi-bar__hidden navi-bar__hidden--menu">  
+      <div className="navi-bar__hidden navi-bar__hidden--menu"
+        onClick={()=>props.showModalToggle()}
+      >  
         <MenuIcon />
       </div>
     </nav>

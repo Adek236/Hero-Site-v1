@@ -1,5 +1,5 @@
 .modal-block {
-  display: flex;
+  display: none;
   justify-content: flex-end;
   width: 100vw;
   height: 100vh;
@@ -8,11 +8,16 @@
   z-index: 3;
 }
 
+.modal-block--active {
+  display: flex;
+}
+
 .modal-block__nav {
   width: 60%;
   height: 100vh;
   background: black;
-/*   transform: translateX(170%); */
+/*   transform: translateX(100%); */
+  animation: showModalAnimation 0.5s;
 }
 
 .modal-block__nav 
@@ -26,6 +31,13 @@ header {
 }
 
 .modal-block__nav 
+header 
+span:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.modal-block__nav 
 nav {
   display: flex;
   flex-direction: column;
@@ -35,10 +47,47 @@ nav {
 }
 
 .modal-block__nav 
+nav 
+a {
+  display:flex;
+/*   margin-bottom: 1rem; */
+  width: 90%;
+  height: 10%;
+  text-decoration: none;
+  align-items: center;
+  justify-content:center;
+  border-radius: 0.25rem;
+  font-size: clamp(1rem, 3.0vh, 3rem);
+  color: #d1d1d1;
+}
+
+.modal-block__nav 
+nav 
+a:hover {
+  background: #383838;
+}
+
+.modal-block__nav 
 footer {
   display: flex;
   height: 8%;
 /*   padding: 0.2rem; */
   justify-content: center;
   align-items: center;
+}
+
+.modal-block__nav 
+footer 
+svg:hover {
+  cursor: pointer;
+  color: white;
+}
+
+@keyframes showModalAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
