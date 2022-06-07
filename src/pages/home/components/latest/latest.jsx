@@ -3,8 +3,8 @@ import './latest.css';
 
 function Latest(props) {
   return (
-    <div className={`home-latest-block ${props.border ? "home-latest-block--border" : ""}`}>
-      <img src={props.data.img} alt="News logo" />
+    <div className="home-latest-block">
+      <img src={props.data.img} alt={props.data.alt} />
       <div className="home-latest-block__info-box">
         <div className="home-latest-block__wrapper">
           <div className="home-latest-block__info-box__alert">
@@ -18,11 +18,10 @@ function Latest(props) {
           {props.data.title}
         </div>
         <div className="home-latest-block__info-box__desc">
-          {props.data.short_desc}
+          <p>{props.data.short_desc}</p>
         </div>
       </div>
     </div>
-
   );
 }
 

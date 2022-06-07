@@ -16,9 +16,9 @@ function Home(props) {
         <Banner />
        </div>
        <div className="home-block__latest home-block__latest--bg">
-        <Latest data={data[0]} border={false}/>
-        <Latest data={data[1]} border={false}/>
-        <Latest data={data[2]} border={false}/>
+        <Latest data={data[0]}/>
+        <Latest data={data[1]}/>
+        <Latest data={data[2]}/>
        </div>
     </div>
   );

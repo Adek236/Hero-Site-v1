@@ -27,7 +27,7 @@ function App() {
         <LeftBlock />
         <div className="container__main">
           <div className="container__main-top">
-            <NaviBar  
+            <NaviBar
               showModalToggle={showModalToggle}
             />
           </div>
@@ -37,7 +37,7 @@ function App() {
                 exact
                 path='/'
                 element={
-                  <Home 
+                  <Home
                     setShowHeroBtns={setShowHeroBtns}
                   />
                 }
@@ -46,8 +46,8 @@ function App() {
                 exact
                 path='/news'
                 element={
-                  <News 
-                    setShowHeroBtns={setShowHeroBtns}    
+                  <News
+                    setShowHeroBtns={setShowHeroBtns}
                   />
                 }
               />
@@ -55,7 +55,7 @@ function App() {
                 exact
                 path='/game'
                 element={
-                  <Game 
+                  <Game
                     setShowHeroBtns={setShowHeroBtns}
                   />
                 }
@@ -82,7 +82,7 @@ function App() {
           whichHeroBtnsActiv={whichHeroBtnsActiv}
           setWhichHeroBtnsActiv={setWhichHeroBtnsActiv}
         />
-        <Modal 
+        <Modal
           showModal={showModal}
           showModalToggle={showModalToggle}
         />
