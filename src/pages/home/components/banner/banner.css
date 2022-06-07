@@ -31,7 +31,7 @@
   z-index: 1;
 /*   transform: translateY(-10%); */
 /*   background: blue; */
-  backdrop-filter: brightness(75%);
+  backdrop-filter: brightness(55%);
 }
 
 .banner__box {

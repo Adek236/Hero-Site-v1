@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import './contentBlock.css';
 
 function ContentBlock(props) {

@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import './latest.css';
+import { useNavigate } from 'react-router-dom';
+
 
 function Latest(props) {
+
+  const navigate = useNavigate();
+  const handleOnClick = useCallback(() => navigate('/news', {replace: true}), [navigate]);
+  
   return (
-    <div className="home-latest-block">
+    <div 
+      className="home-latest-block"
+      onClick={handleOnClick}
+    >
       <img src={props.data.img} alt={props.data.alt} />
       <div className="home-latest-block__info-box">
         <div className="home-latest-block__wrapper">
