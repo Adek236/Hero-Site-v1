@@ -100,7 +100,7 @@ export const heroes = [
       `Bent alilputate nt aliquent aliquent aliquevestibulum.
             Praesent aliquet leo sit nt aliqueamet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`
     ],
-    img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1027,w_1027/v1652296466/ccc3_nz62hj.png',
+    img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1027/v1654630658/ge_hyq0sc.png',
     alt: '',
     avatar: 'https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg'
   }
@@ -110,7 +110,7 @@ export const news = [
   {
     id: 0,
     category: "Update",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    img: "https://res.cloudinary.com/yaif/image/upload/v1654629576/PngItem_263872_ys4eji.png",
     alt: '',
     title: "New character Elia",
     short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
@@ -121,7 +121,7 @@ export const news = [
   {
     id: 1,
     category: "Media",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1024/v1654631396/Pngtree_game_volcano_advertising_background_979719_iedhcm.jpg",
     alt: '',
     title: "New epic trailer",
     short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
