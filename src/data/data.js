@@ -18,7 +18,7 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/v1628780124/asddfss_axyukr.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654675627/asddfss_axyukr.png'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654722531/zzz_gfoinl.png'
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/v1628775909/mag_jpizbv.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654675456/mag_jpizbv.png'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654722531/fgf_gh3imn.png'
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1024,w_900/v1628777914/gaa_zlmopr.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1628777914/gaa_zlmopr.png'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654722531/sdsa_xxd2eu.png'
   },
   {
     id: 4,
@@ -81,7 +81,7 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1027,w_550/v1628770841/asdd_bdppme.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1628770841/asdd_bdppme.png'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654722531/sz_x0ip82.png'
   },
   {
     id: 5,
@@ -102,7 +102,7 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1027/v1654630658/ge_hyq0sc.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654675735/ge_hyq0sc.png'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654722531/zs_yispkt.png'
   }
 ];
 

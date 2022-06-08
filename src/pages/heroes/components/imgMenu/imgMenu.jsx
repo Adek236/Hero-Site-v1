@@ -7,7 +7,11 @@ function ImgMenu(props) {
 			{props.data.map(obj => (
 				<div
 					key={obj.id}
-					className="img-menu__el"
+					className={
+							props.idActiveAvatar === obj.id
+								? 'img-menu__el'
+								: 'img-menu__el img-menu__el--brightness'
+						}
 					onClick={() => {
             props.setIdActiveAvatar(obj.id);
             // TODO: if whichbtn is 0 do not this \/

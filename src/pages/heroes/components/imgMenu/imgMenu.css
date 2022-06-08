@@ -7,6 +7,7 @@
   height: 100%;
   overflow-y: scroll;
 /*   background: green; */
+/*   padding: 0.1rem; */
 }
 
 .img-menu__el {
@@ -16,7 +17,16 @@
   min-height: 100px;
   width: 100%;
   position: relative;
-/*   background-color: red; */
+/*   background-color: rgb(0 0 0 / 0.8); */ 
+  border: 1px solid rgb(214, 214, 214, 0.1);
+}
+
+.img-menu__el:hover {
+  filter: brightness(100%);
+}
+
+.img-menu__el--brightness {
+  filter: brightness(40%);
 }
 
 .img-menu__el img {
@@ -28,6 +38,7 @@
   object-position: center;
   pointer-events: none;
 /*   border: 1px solid rgb(214, 214, 214, 0.1); */
+  
 }
 
 .img-menu__el-bg {
@@ -42,13 +53,15 @@
 }
 
 .img-menu__el:hover > .img-menu__el-bg {
-  border-left: clamp(2px, 1vw, 7px) solid rgb(238, 47, 47);
-  background-image: linear-gradient(to right, rgb(255,0,0,0.8),rgb(255,0,0,0.0));
+/*   border-left: clamp(2px, 1vw, 7px) solid rgb(238, 47, 47);
+  background-image: linear-gradient(to right, rgb(255,0,0,0.4),rgb(255,0,0,0.0)); */
+  border: 1px solid rgb(255, 255, 255, 0.4); 
 }
 
 .img-menu__el-bg--click {
-  border-left: clamp(2px, 1vw, 7px) solid rgb(238, 47, 47);
-  background-image: linear-gradient(to right, rgb(255,0,0,0.8),rgb(255,0,0,0.0)); 
+/*   border-left: clamp(2px, 1vw, 7px) solid rgb(238, 47, 47);
+  background-image: linear-gradient(to right, rgb(255,0,0,0.4),rgb(255,0,0,0.0));  */
+  border: 1px solid rgb(255, 255, 255, 0.4); 
 }
 
 
