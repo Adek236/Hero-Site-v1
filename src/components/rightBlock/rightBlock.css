@@ -75,8 +75,11 @@
   }
 }
 
-/* @media only screen and (orientation:portrait) {
-  .right-block {
-    flex-direction: row;
+@media only screen and (orientation:portrait) {
+  .right-block__menu {
+    max-height: 5%;
   }
-} */
+  .right-block__btns {
+    max-height: 95%;
+  }
+}

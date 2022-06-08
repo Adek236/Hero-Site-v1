@@ -4,6 +4,7 @@ import { news as data } from '../../data/data';
 import Banner from './components/banner/banner';
 import Latest from './components/latest/latest';
 
+
 function Home(props) {
 
   useEffect(() => {

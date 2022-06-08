@@ -8,6 +8,7 @@
 
 .navi-bar--font {
   font-size: clamp(0.3rem, 1vw, 0.8rem);
+  letter-spacing: 1px;
 }
 
 .navi-bar--bg {

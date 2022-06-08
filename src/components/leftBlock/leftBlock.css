@@ -63,3 +63,12 @@
     display: none;
   }
 }
+
+@media only screen and (orientation:portrait) {
+  .left-block__logo {
+    max-height: 5%;
+  }
+  .left-block__socials {
+    max-height: 95%;
+  }
+}

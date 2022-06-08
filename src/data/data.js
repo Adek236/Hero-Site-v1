@@ -1,7 +1,7 @@
 export const heroes = [
   {
     id: 1,
-    name: 'first',
+    name: 'Skull',
     desc: [
       `Pxaesent aliquet leo sit amet vulputate vestibulum.
         Praesent aliquet leo sit amet vulputate vestibulum.     
@@ -18,11 +18,11 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/v1628780124/asddfss_axyukr.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654675627/asddfss_axyukr.png'
   },
   {
     id: 2,
-    name: 'sec',
+    name: 'Mooti',
     desc: [
       `Gggggggggget leo sit amet vulputate vestibulum.
         Praesent afasfsfsfsfat vulputate vestibulum.     
@@ -39,11 +39,11 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/v1628775909/mag_jpizbv.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654675456/mag_jpizbv.png'
   },
   {
     id: 3,
-    name: 'thre',
+    name: 'Vulo',
     desc: [
       `Pxaesent aliqwtqtttqwetqwtlputate vestibulum.
         Praesent aliquet leo sit amet vulputate vestibulum.     
@@ -60,11 +60,11 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1024,w_900/v1628777914/gaa_zlmopr.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1628777914/gaa_zlmopr.png'
   },
   {
     id: 4,
-    name: 'third',
+    name: 'Lai',
     desc: [
       `Pxaesent aliquet leo sit amet t vulputatet vulputatevulputate vestibulum.
         Praesent aliquet t vulputateleo sit amet vulputate vestibulum.     
@@ -81,11 +81,11 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1027,w_550/v1628770841/asdd_bdppme.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1628770841/asdd_bdppme.png'
   },
   {
     id: 5,
-    name: 'five',
+    name: 'Thaan',
     desc: [
       `Pxaesent aliquet leo sit amet vulputate vestibulum.
         Praesent aliquet leo sit amet vulputate vestibulum.     
@@ -102,7 +102,7 @@ export const heroes = [
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1027/v1654630658/ge_hyq0sc.png',
     alt: '',
-    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg'
+    avatar: 'https://res.cloudinary.com/yaif/image/upload/v1654675735/ge_hyq0sc.png'
   }
 ];
 

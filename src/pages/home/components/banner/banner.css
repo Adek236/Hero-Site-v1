@@ -57,6 +57,7 @@
   font-family: 'Smooch', cursive;
   font-size: clamp(1rem, 6.5vw, 7rem);
   margin-bottom: 1.3rem;
+  animation: appearAnnimation 3000ms forwards;
 }
 
 .banner__box__logo span {
@@ -71,11 +72,10 @@
   justify-content: center;
   width: 35%;
   height: 23%;
-/*   margin-top: clamp(-0.1rem, 2.0vw, -3rem); */
   font-size: clamp(0.5rem, 1.5vw, 1rem);
   background: rgb(255,0,0,0.2);
   border-radius: 0.1rem;
-  animation: pulse 2s infinite;
+  animation: appearAnnimation 3s forwards, pulse 2s infinite;
   color: rgb(255, 255, 255, 0.5);
   backdrop-filter: blur(2px);
 }
@@ -86,17 +86,7 @@
   background: rgb(255,0,0,0.35);
 }
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(122, 0, 0, 0.9);
-  }
-  70% {
-      box-shadow: 0 0 0 10px rgba(122, 0, 0, 0);
-  }
-  100% {
-      box-shadow: 0 0 0 0 rgba(122, 0, 0, 0);
-  }
-}
+
 
 @media only screen and (max-width: 1000px) and (orientation:portrait) {
   .banner__video {

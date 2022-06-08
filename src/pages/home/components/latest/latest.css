@@ -11,25 +11,10 @@
 /*   background: blue; */
   border: 1px solid rgb(214, 214, 214, 0.1); 
   background: rgb(0, 0, 0, 0.4);
+  animation: appearAnnimation 3000ms forwards;
 }
 
-.home-latest-block:hover {
-/*  transform: scale(1.001); */
- cursor: pointer;
-/*  backdrop-filter: brightness(10%); */
- border: 1px solid rgb(255, 255, 255, 0.4);  
-}
 
-.home-latest-block:hover > * {
-  backdrop-filter: brightness(50%);
-  color: white;
-}
-
-.home-latest-block:hover .home-latest-block__info-box__desc 
-p {
-  display: flex;
-  animation: slide-up 1000ms forwards;
-}
 
 .home-latest-block--border {
   border-right: 1px solid rgb(214, 214, 214, 0.1); 
@@ -119,15 +104,32 @@ p {
   background: rgb(0, 0, 0, 0.85);
 }
 
-@keyframes slide-up {
-  0% {
-/*     transform: translateY(100%); */
-    opacity: 0;
+@media (hover: hover) {
+  .home-latest-block:hover {
+  /*  transform: scale(1.001); */
+   cursor: pointer;
+  /*  backdrop-filter: brightness(10%); */
+   border: 1px solid rgb(255, 255, 255, 0.4);  
   }
-  100% {
-/*     transform: translateY(0%); */
-    opacity: 1;
+  
+  .home-latest-block:hover > * {
+    backdrop-filter: brightness(50%);
+    color: white;
+  }
+  
+  .home-latest-block:hover .home-latest-block__info-box__desc 
+  p {
+    display: flex;
+    animation: appearAnnimation 1000ms forwards;
   }
 }
+
+@media (hover: none) {
+  .home-latest-block__info-box__desc 
+  p {
+    display: flex;
+  }
+}
+
 
 /* TODO: na tel, odrazu opis i bez zaciemnienia  */

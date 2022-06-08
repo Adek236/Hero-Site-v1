@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import './banner.css';
+import { useNavigate } from 'react-router-dom';
 
 function Banner() {
+  
+  const navigate = useNavigate();
+  const handleOnClick = useCallback(() => navigate('/game', {replace: true}), [navigate]);
 
   const link = "https://res.cloudinary.com/yaif/video/upload/v1653055556/Mountain_baajzf.mp4";
   
@@ -17,7 +21,10 @@ function Banner() {
       <div className="banner__video--mod"></div>
       <div className="banner__box">
         <div className="banner__box__logo">Hero <span>G</span>ame</div>  
-        <div className="banner__box__btn">Let's play...</div>  
+        <div 
+          className="banner__box__btn"
+          onClick={handleOnClick}
+        >Let's play...</div>  
       </div>
     </div>
      

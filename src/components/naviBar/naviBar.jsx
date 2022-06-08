@@ -7,11 +7,11 @@ import GamepadIcon from '@mui/icons-material/Gamepad';
 function NaviBar(props) {
   return (
     <nav className="navi-bar navi-bar--font navi-bar--bg">
-      <Link to="/"> Home </Link>
-      <Link to="/news"> News </Link>
-      <Link to="/game"> Game </Link>
-      <Link to="/heroes"> Heroes </Link>
-      <Link to="/support"> Support </Link>
+      <Link to="/"> HOME </Link>
+      <Link to="/news"> NEWS </Link>
+      <Link to="/game"> GAME </Link>
+      <Link to="/heroes"> HEROES </Link>
+      <Link to="/support"> SUPPORT </Link>
       <div className="navi-bar__hidden">
       </div>
       <div className="navi-bar__hidden">
