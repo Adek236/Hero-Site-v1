@@ -12,7 +12,6 @@ import News from './pages/news/news';
 import Game from './pages/game/game';
 
 function App() {
-  // showHeroBtns need to change from true/false to string with which page
   const [showHeroBtns, setShowHeroBtns] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [whichHeroBtnsActiv, setWhichHeroBtnsActiv] = useState(0);

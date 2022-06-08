@@ -109,10 +109,10 @@ export const heroes = [
 export const news = [
   {
     id: 0,
-    category: "Update",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1654629576/PngItem_263872_ys4eji.png",
+    category: "Media",
+    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1024/v1654631396/Pngtree_game_volcano_advertising_background_979719_iedhcm.jpg",
     alt: '',
-    title: "New character Elia",
+    title: "New epic trailer",
     short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
             Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
     long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
@@ -120,10 +120,10 @@ export const news = [
   },
   {
     id: 1,
-    category: "Media",
-    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1024/v1654631396/Pngtree_game_volcano_advertising_background_979719_iedhcm.jpg",
+    category: "Update",
+    img: "https://res.cloudinary.com/yaif/image/upload/v1654629576/PngItem_263872_ys4eji.png",
     alt: '',
-    title: "New epic trailer",
+    title: "New character Elia",
     short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
             Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
     long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
@@ -165,7 +165,7 @@ export const news = [
   {
     id: 5,
     category: "Community",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1024/v1654631396/Pngtree_game_volcano_advertising_background_979719_iedhcm.jpg",
     alt: '',
     title: "New event in London",
     short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
@@ -176,7 +176,7 @@ export const news = [
   {
     id: 6,
     category: "Update",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    img: "https://res.cloudinary.com/yaif/image/upload/v1654629576/PngItem_263872_ys4eji.png",
     alt: '',
     title: "New character Elia",
     short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.

@@ -5,6 +5,7 @@
   overflow-y: scroll;
   padding: 2%;
 /*   background: #9db974; */
+  color: white;
 }
 
 .news-block__box {
@@ -45,7 +46,7 @@ img {
 }
 
 .news-block__box__el--border {
-  border: 1px solid rgb(214, 214, 214, 0.1);
+/*   border: 1px solid rgb(214, 214, 214, 0.1); */
 }
 
 
@@ -56,7 +57,7 @@ img {
 /*   height: 50%; */
   width: 99%;
   margin: 0.1rem;
-  border: 1px solid rgb(214, 214, 214, 0.1);
+/*   border: 1px solid rgb(214, 214, 214, 0.1); */
 /*   background: #232353; */
 }
 
@@ -67,10 +68,8 @@ img {
   min-width: 48%;
   margin: 0.1rem;
 /*   background: #ca9d4e; */
-  border: 1px solid rgb(214, 214, 214, 0.1);
+/*   border: 1px solid rgb(214, 214, 214, 0.1); */
 }
-
-
 
 
 @media only screen and (max-width: 956px) {
