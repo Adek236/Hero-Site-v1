@@ -6,10 +6,18 @@ function AddNews(props) {
   return (
           <div className="add-news-block">
             <img src={props.data.img} alt={props.data.alt} />
-            <div className="add-news-block__title">
+            <section className="add-news-block__title">
               <h1>{props.data.title}</h1>  
               <h2>{props.data.category}</h2>
-            </div>
+            </section>
+            <section className="add-news-block__desc">
+              <p>
+                {props.data.short_desc}
+              </p>
+              <p>
+                {props.data.long_desc}
+              </p>
+            </section>
           </div>
   );
 }

@@ -101,15 +101,15 @@ p {
   display: none;
   padding: 0.5rem;
   width: 100%;
+  min-height: 20%;
   background: rgb(0, 0, 0, 0.85);
 }
 
 @media (hover: hover) {
   .home-latest-block:hover {
-  /*  transform: scale(1.001); */
-   cursor: pointer;
-  /*  backdrop-filter: brightness(10%); */
-   border: 1px solid rgb(255, 255, 255, 0.4);  
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255, 0.4);  
+/*     animation: appearAnnimation 1s forwards; */
   }
   
   .home-latest-block:hover > * {
@@ -120,7 +120,7 @@ p {
   .home-latest-block:hover .home-latest-block__info-box__desc 
   p {
     display: flex;
-    animation: appearAnnimation 1000ms forwards;
+    animation: appearAnnimation 1s forwards;
   }
 }
 

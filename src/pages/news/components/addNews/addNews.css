@@ -4,6 +4,8 @@
   height: 100%;
   position: relative;
   border: 1px solid rgb(214, 214, 214, 0.1);
+  animation: appearAnnimation 2s forwards;
+  
 }
 
 .add-news-block:hover {
@@ -14,7 +16,7 @@
 .add-news-block 
 img {
   object-fit: cover;
-  object-position: 50% 30%;  
+  object-position: 50% 30%;
 }
 
 .add-news-block__title {
@@ -26,6 +28,15 @@ img {
 /*   align-items: center; */
 /*   justify-content: center; */
   background-color: rgba(0 0 0 / 0.9);
+  transition: all 1s ease;
+}
+
+.add-news-block:hover > .add-news-block__title {
+  bottom: 80%; 
+}
+
+.add-news-block:hover > img {
+  animation: shadeAnimation 1s forwards;
 }
 
 .add-news-block__title 
@@ -46,4 +57,8 @@ h2 {
 /*   align-self: flex-start; */
   justify-content: flex-end;
   font-size: clamp(0.4rem, 1.0vw, 0.7rem);
+}
+
+.add-news-block__desc {
+  display: none;
 }

@@ -18,25 +18,25 @@ function RightBlock(props) {
           className={props.whichHeroBtnsActiv == 0 ? "hero-btn-activated" : ""}
           onClick={()=> activatedBtn(0)}
         >
-          Button1
+          <p>Overview</p>
         </div>
         <div
           className={props.whichHeroBtnsActiv == 1 ? "hero-btn-activated" : ""}
           onClick={()=> activatedBtn(1)}
         >
-          Button2
+          <p>Lore</p>
         </div>
         <div 
           className={props.whichHeroBtnsActiv == 2 ? "hero-btn-activated" : ""}
           onClick={()=> activatedBtn(2)}
         >
-          Button3
+          <p>Abilities</p>
         </div>
         <div 
           className={props.whichHeroBtnsActiv == 3 ? "hero-btn-activated" : ""}
           onClick={()=> activatedBtn(3)}
         >
-          Button4
+          <p>Relations</p>
         </div>
       </div>
     );

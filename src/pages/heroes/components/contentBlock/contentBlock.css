@@ -7,6 +7,7 @@
   color: white;
 /*   background: red; */
 /*   position: relative; */
+  animation: appearAnnimation 2s forwards;
 }
 
 .content-block__text {
@@ -75,6 +76,7 @@ span:hover {
   z-index: 1;
 /*   transform: translate(-8%,-6%); */
   filter: drop-shadow(5px 5px 4px #000000);
+/*   animation: appearAnnimation 1s forwards; */
 }
 
 /* .content-block__img img:hover {

@@ -1,20 +1,29 @@
+import { LoremIpsum } from "lorem-ipsum";
+
+const lorem = new LoremIpsum({
+  sentencesPerParagraph: {
+    max: 8,
+    min: 4
+  },
+  wordsPerSentence: {
+    max: 16,
+    min: 4
+  }
+});
+
+// lorem.generateWords(1);
+// lorem.generateSentences(5);
+// lorem.generateParagraphs(7);
+
 export const heroes = [
   {
     id: 1,
     name: 'Skull',
     desc: [
-      `Pxaesent aliquet leo sit amet vulputate vestibulum.
-        Praesent aliquet leo sit amet vulputate vestibulum.     
-        Praesent aliquet leo sit amet vulputate vestibulum.`,
-
-      `Zraesent alit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`,
-
-      `Aesent aliquet leo sit amet vulputate vestibulum.
-            Praesent ali vestibulum.`,
-
-      `Bent alilputate vestibulum.
-            Praesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`
+      lorem.generateSentences(5),
+      lorem.generateSentences(10),
+      lorem.generateSentences(12),
+      lorem.generateSentences(7)
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/v1628780124/asddfss_axyukr.png',
     alt: '',
@@ -24,18 +33,10 @@ export const heroes = [
     id: 2,
     name: 'Mooti',
     desc: [
-      `Gggggggggget leo sit amet vulputate vestibulum.
-        Praesent afasfsfsfsfat vulputate vestibulum.     
-        fasfsafsafant aliquet leo sit amet vulputate vestibulum.`,
-
-      `Zraesent alit amet vulputate vestibulum.
-            Xesent aldsdssssssssssssulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`,
-
-      `Aesent aliquet leo sit amet vulputate vestibulum.
-            Praesfsfssssssssssssssssssssssulum.`,
-
-      `Bent alilputate vestibulum.
-            Praesegssssssssssssssssssssit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`
+      lorem.generateSentences(5),
+      lorem.generateSentences(10),
+      lorem.generateSentences(12),
+      lorem.generateSentences(7)
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/v1628775909/mag_jpizbv.png',
     alt: '',
@@ -45,18 +46,10 @@ export const heroes = [
     id: 3,
     name: 'Vulo',
     desc: [
-      `Pxaesent aliqwtqtttqwetqwtlputate vestibulum.
-        Praesent aliquet leo sit amet vulputate vestibulum.     
-        Praesent aliquet leowtqwtqwtqwtqtibulum.`,
-
-      `Zraesent alit twae vestibulum.
-            Xesent aliquet leo sit amet vulputate vestxczcxzxzt aliquet leo sit amet vulputaaaestibulum.`,
-
-      `Aesent aliquet leot aliquet lt aliquet lt aliquet l sit amet vulputate vestibulum.
-            Praesent ali vestibulum.`,
-
-      `Bent alilputaaesent ate vestibulum.
-            Praesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulpuaesent atate vestiaesent aaesent aaesent aaesent abulum.`
+      lorem.generateSentences(5),
+      lorem.generateSentences(10),
+      lorem.generateSentences(12),
+      lorem.generateSentences(7)
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1024,w_900/v1628777914/gaa_zlmopr.png',
     alt: '',
@@ -66,18 +59,10 @@ export const heroes = [
     id: 4,
     name: 'Lai',
     desc: [
-      `Pxaesent aliquet leo sit amet t vulputatet vulputatevulputate vestibulum.
-        Praesent aliquet t vulputateleo sit amet vulputate vestibulum.     
-        Praesent alit vulputatet vulputateuet leo sit amet vulputate vestibulum.`,
-
-      `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum.`,
-
-      `Aesent aliqudsdsdsdsdsd vulputate vestibulum.
-            Praesent ali vestibulum.`,
-
-      `Bent alilputate vestibulum.
-            Praesefasfasfafasfestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`
+      lorem.generateSentences(5),
+      lorem.generateSentences(10),
+      lorem.generateSentences(12),
+      lorem.generateSentences(7)
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1027,w_550/v1628770841/asdd_bdppme.png',
     alt: '',
@@ -87,18 +72,10 @@ export const heroes = [
     id: 5,
     name: 'Thaan',
     desc: [
-      `Pxaesent aliquet leo sit amet vulputate vestibulum.
-        Praesent aliquet leo sit amet vulputate vestibulum.     
-        Praesent aliquet leo sit amet vulputate vestibulum.`,
-
-      `Zraesent alit amet vulputate vestibulum.
-            Xesent aliqaliquet leo sit amealiquet leo sit ameuet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`,
-
-      `Aesent aliquet leit amet vulputateit amet vulputateit amet vulputateo sit amet vulputate vestibulum.
-            Praesent ali vestibulum.`,
-
-      `Bent alilputate nt aliquent aliquent aliquevestibulum.
-            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vestibulum.`
+      lorem.generateSentences(5),
+      lorem.generateSentences(10),
+      lorem.generateSentences(12),
+      lorem.generateSentences(7)
     ],
     img: 'https://res.cloudinary.com/yaif/image/upload/c_lpad,h_1027/v1654630658/ge_hyq0sc.png',
     alt: '',
@@ -113,10 +90,8 @@ export const news = [
     img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1024/v1654631396/Pngtree_game_volcano_advertising_background_979719_iedhcm.jpg",
     alt: '',
     title: "New epic trailer",
-    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
-            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
-    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+    short_desc: lorem.generateSentences(1),
+    long_desc: lorem.generateSentences(6)
   },
   {
     id: 1,
@@ -124,10 +99,8 @@ export const news = [
     img: "https://res.cloudinary.com/yaif/image/upload/v1654629576/PngItem_263872_ys4eji.png",
     alt: '',
     title: "New character Elia",
-    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
-            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
-    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+    short_desc: lorem.generateSentences(1),
+    long_desc: lorem.generateSentences(6)
   },
   {
     id: 2,
@@ -135,10 +108,8 @@ export const news = [
     img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
     alt: '',
     title: "New event in London",
-    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
-            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
-    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+    short_desc: lorem.generateSentences(1),
+    long_desc: lorem.generateSentences(6)
   },
   {
     id: 3,
@@ -146,10 +117,8 @@ export const news = [
     img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
     alt: '',
     title: "New character Elia",
-    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
-            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
-    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+    short_desc: lorem.generateSentences(1),
+    long_desc: lorem.generateSentences(6)
   },
   {
     id: 4,
@@ -157,10 +126,8 @@ export const news = [
     img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
     alt: '',
     title: "New epic trailer",
-    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
-            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
-    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+    short_desc: lorem.generateSentences(1),
+    long_desc: lorem.generateSentences(6)
   },
   {
     id: 5,
@@ -168,10 +135,8 @@ export const news = [
     img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1024/v1654631396/Pngtree_game_volcano_advertising_background_979719_iedhcm.jpg",
     alt: '',
     title: "New event in London",
-    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
-            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
-    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+    short_desc: lorem.generateSentences(1),
+    long_desc: lorem.generateSentences(6)
   },
   {
     id: 6,
@@ -179,10 +144,8 @@ export const news = [
     img: "https://res.cloudinary.com/yaif/image/upload/v1654629576/PngItem_263872_ys4eji.png",
     alt: '',
     title: "New character Elia",
-    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
-            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
-    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+    short_desc: lorem.generateSentences(1),
+    long_desc: lorem.generateSentences(6)
   },
   {
     id: 7,
@@ -190,9 +153,7 @@ export const news = [
     img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
     alt: '',
     title: "New epic trailer",
-    short_desc: `Bent alilputate nt aliquent aliquent aliquevestibulum.
-            Praesent aliquet leo sit nt aliqueamet vulputate vestibulum.`,
-    long_desc: `Zraesent liquet leo siliquet leo sialit amet vulputate vestibulum.
-            Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sitibulum. Xesent aliquet leo sit amet vulputate vestibulum. Praesent aliquet leo sit amet vulputate vesliquet leo siliquet leo sit `
+    short_desc: lorem.generateSentences(1),
+    long_desc: lorem.generateSentences(6)
   }
 ];

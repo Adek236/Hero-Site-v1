@@ -26,12 +26,24 @@ function ImgMenu(props) {
 								: 'img-menu__el-bg'
 						}
 					>
-						{obj.name}
 					</div>
+          <div 
+            className="img-menu__el-title"
+            style={{display: 
+              props.idActiveAvatar === obj.id
+								? 'flex'
+								: ''
+            }}
+          >
+            {obj.name}
+          </div>
 				</div>
 			))}
 		</div>
 	);
 }
+
+
+// style={{marginRight: spacing + 'em'}}
 
 export default ImgMenu;
