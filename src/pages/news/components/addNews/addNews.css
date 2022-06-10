@@ -5,7 +5,6 @@
   position: relative;
   border: 1px solid rgb(214, 214, 214, 0.1);
   animation: appearAnnimation 2s forwards;
-  
 }
 
 .add-news-block:hover {
@@ -29,6 +28,7 @@ img {
 /*   justify-content: center; */
   background-color: rgba(0 0 0 / 0.9);
   transition: all 1s ease;
+  z-index: 2;
 }
 
 .add-news-block:hover > .add-news-block__title {
@@ -52,13 +52,30 @@ h1 {
 h2 {
   display: flex;
   width: 10%;
-/*   align-items: flex-end; */
-/*   display: flex; */
-/*   align-self: flex-start; */
   justify-content: flex-end;
   font-size: clamp(0.4rem, 1.0vw, 0.7rem);
+  color: rgb(255, 255, 255, 0.4);
 }
 
 .add-news-block__desc {
   display: none;
+  flex-direction: column;
+  padding: 5%;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  overflow-y: scroll;
+  animation: appearAnnimation 4s forwards;
+}
+
+.add-news-block__desc 
+p {
+  text-indent: 5%;
+  margin-bottom: 3%;
+}
+
+.add-news-block:hover > .add-news-block__desc {
+  display: flex;
 }

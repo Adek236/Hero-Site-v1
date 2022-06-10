@@ -10,6 +10,7 @@ import Heroes from './pages/heroes/heroes';
 import Home from './pages/home/home';
 import News from './pages/news/news';
 import Game from './pages/game/game';
+import Support from './pages/support/support';
 
 function App() {
   const [showHeroBtns, setShowHeroBtns] = useState(false);
@@ -67,6 +68,15 @@ function App() {
                     setShowHeroBtns={setShowHeroBtns}
                     whichHeroBtnsActiv={whichHeroBtnsActiv}
                     setWhichHeroBtnsActiv={setWhichHeroBtnsActiv}
+                  />
+                }
+              />
+              <Route
+                exact
+                path='/support'
+                element={
+                  <Support
+                    setShowHeroBtns={setShowHeroBtns}
                   />
                 }
               />

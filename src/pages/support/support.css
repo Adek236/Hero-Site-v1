@@ -1,0 +1,87 @@
+.support-block,
+.support-block 
+section,
+form, 
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.support-block {
+  flex-grow: 1;
+  justify-content: flex-start;
+/*   font-weight: 600; */
+  padding-top: 5%;
+  overflow-y: scroll;
+}
+
+.support-block 
+section {
+  margin-bottom: 2rem;
+}
+
+.support-block 
+h1 {
+  font-size: clamp(2rem, 4.0vw, 6rem);  
+}
+
+.support-block 
+h2 {
+  font-size: clamp(1rem, 1.5vw, 5rem); 
+}
+
+.support-block 
+form {
+  min-width: 250px;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+}
+
+.support-block 
+label {
+  width: 80%;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.support-block 
+label
+input, 
+textarea, 
+select {
+  width: 100%;
+  margin-top: 0.4rem;
+/*   min-width: 200px; */
+/*   max-width: 400px; */
+  height: 50px;
+  padding: 0.5rem;
+  background: #d1d1d1;
+}
+
+.support-block 
+label 
+textarea {
+  height: 200px;
+}
+
+.support-block 
+form 
+input[type="submit"] {
+  padding: clamp(0.2rem, 1.0vw, 1rem);
+  background: rgb(255,0,0,0.2);
+  border-radius: 0.1rem;
+  animation: pulse 2s infinite;
+  color: rgb(255, 255, 255, 0.5);
+  border: none;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.support-block form input[type="submit"]:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255, 0.85);
+  background: rgb(255,0,0,0.35);
+}

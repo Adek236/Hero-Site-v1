@@ -46,7 +46,13 @@
   height: 70%;
   padding: 1rem;
 /*   align-text: center; */
-  font-size: calc(0.2em + 1.2vmin);
+/*   font-size: calc(0.2em + 1.2vmin); */
+  overflow-y: auto;
+}
+
+.content-block__text-desc 
+p {
+  text-indent: 5%;    
 }
 
 .content-block__text-desc 

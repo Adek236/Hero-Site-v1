@@ -44,8 +44,8 @@
 }
 
 .container--bg {
-  background-color: rgb(0, 0, 0);
   background-image: url(https://res.cloudinary.com/yaif/image/upload/e_brightness:-82/v1651579904/cool-geometric-triangular-figure-neon-laser-light-great-background_tcdrdq.jpg);
+background-color: rgb(11, 103, 142);
 /*   background-image: url(https://res.cloudinary.com/yaif/image/upload/e_brightness:-86,o_100/v1654164900/2843425_n8wrnq.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
@@ -127,6 +127,6 @@
 
 @keyframes shadeAnimation {
   100% {
-    filter: brightness(40%);
+    filter: brightness(25%);
   }
 }

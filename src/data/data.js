@@ -87,9 +87,9 @@ export const news = [
   {
     id: 0,
     category: "Media",
-    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1024/v1654631396/Pngtree_game_volcano_advertising_background_979719_iedhcm.jpg",
+    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1200/v1654842155/eerie-dark-castle-illustration_lyitjc.jpg",
     alt: '',
-    title: "New epic trailer",
+    title: "Trailer of Morin is on!",
     short_desc: lorem.generateSentences(1),
     long_desc: lorem.generateSentences(6)
   },
@@ -98,61 +98,61 @@ export const news = [
     category: "Update",
     img: "https://res.cloudinary.com/yaif/image/upload/v1654629576/PngItem_263872_ys4eji.png",
     alt: '',
-    title: "New character Elia",
+    title: "Elia - mage of Lunteria.",
     short_desc: lorem.generateSentences(1),
     long_desc: lorem.generateSentences(6)
   },
   {
     id: 2,
     category: "Community",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    img: "https://res.cloudinary.com/yaif/image/upload/v1654841766/london-2184805_1280_oqqgfr.jpg",
     alt: '',
-    title: "New event in London",
+    title: "New event in London.",
     short_desc: lorem.generateSentences(1),
     long_desc: lorem.generateSentences(6)
   },
   {
     id: 3,
     category: "Update",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1024/v1654631396/Pngtree_game_volcano_advertising_background_979719_iedhcm.jpg",
     alt: '',
-    title: "New character Elia",
+    title: "Patch 20.14 teaser.",
     short_desc: lorem.generateSentences(1),
     long_desc: lorem.generateSentences(6)
   },
   {
     id: 4,
-    category: "Media",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    category: "Community",
+    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1200/v1654783190/pov-of-young-man-excited-about-his-wining-while-playing-shooter-games-on-stream_jjb6pb.jpg",
     alt: '',
-    title: "New epic trailer",
+    title: "LukFnt win this season.",
     short_desc: lorem.generateSentences(1),
     long_desc: lorem.generateSentences(6)
   },
   {
     id: 5,
-    category: "Community",
-    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1024/v1654631396/Pngtree_game_volcano_advertising_background_979719_iedhcm.jpg",
+    category: "Media",
+    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1200/v1654843551/pawel-kadysz-CuFYW1c97w8-unsplash_erzayz.jpg",
     alt: '',
-    title: "New event in London",
+    title: "Are you ready?",
     short_desc: lorem.generateSentences(1),
     long_desc: lorem.generateSentences(6)
   },
   {
     id: 6,
-    category: "Update",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1654629576/PngItem_263872_ys4eji.png",
+    category: "Community",
+    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1200/v1654782834/low-angle-man-playing-videogame_1_ywwzud.jpg",
     alt: '',
-    title: "New character Elia",
+    title: "New serwer incomming.",
     short_desc: lorem.generateSentences(1),
     long_desc: lorem.generateSentences(6)
   },
   {
     id: 7,
-    category: "Media",
-    img: "https://res.cloudinary.com/yaif/image/upload/v1652096363/game-console-6603120_640_uvktla.jpg",
+    category: "Update",
+    img: "https://res.cloudinary.com/yaif/image/upload/c_scale,w_1200/v1654782198/wizard-dark-dungeon-illustration_yvbdai.jpg",
     alt: '',
-    title: "New epic trailer",
+    title: "Lunteria map now available!",
     short_desc: lorem.generateSentences(1),
     long_desc: lorem.generateSentences(6)
   }

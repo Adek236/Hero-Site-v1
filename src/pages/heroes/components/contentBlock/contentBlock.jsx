@@ -12,13 +12,13 @@ function ContentBlock(props) {
   return (
     <div className="content-block">
       <div className="content-block__text">
-        <div className="content-block__text-title">
+        <section className="content-block__text-title">
           <p>{props.objData.name}</p>
-        </div>
-        <div className="content-block__text-desc">
-          {props.objData.desc[props.whichHeroBtnsActiv]}
+        </section>
+        <section className="content-block__text-desc">
+          <p>{props.objData.desc[props.whichHeroBtnsActiv]}</p>
           <span onClick={() => nextDesc()}>Read more...</span>
-        </div>
+        </section>
       </div>
       <div className="content-block__img">
         <img src={props.objData.img}></img>
