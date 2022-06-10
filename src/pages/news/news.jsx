@@ -7,6 +7,7 @@ function News(props) {
 
   useEffect(() => {
 	  props.setShowHeroBtns(false);
+    
 	}, []);
   
   return (

@@ -1,24 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import './support.css';
 
-function Support(props) {
-  const [inputs, setInputs] = useState({});
 
-  const validationCheck = (name, value) => {
-    
+// https://stackabuse.com/how-to-scroll-to-top-in-react-with-a-button-component/
+
+function Support(props) {
+  const [inputs, setInputs] = useState({
+    reqType: "general"
+  });
+  const [valErrors, setValErrors] = useState({})
+  
+  const validationCheck = () => {
+    return true;
   }
   
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    // if (!validationCheck(name, value)) return console.log("zle");
     setInputs(values => ({...values, [name]: value}))
   }
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputs);
+    if (!validationCheck()) return console.log("zle");
+    setInputs({reqType: "general"});
+    // jesli przejdzie walidacje to resetuje form i wyswietla ze done, jak nie to co poprawic
   }
   
 	useEffect(() => {
@@ -31,6 +38,9 @@ function Support(props) {
         <h1>Submit a request</h1>
         <h2>We're here to help you!</h2>
       </section>
+      <div className="support-block__errors">
+        Thanks for request!
+      </div>
       <form onSubmit={handleSubmit}>
         <label>YOUR EMAIL ADRESS
           <input 
@@ -38,13 +48,16 @@ function Support(props) {
             name="email" 
             value={inputs.email || ""} 
             onChange={handleChange}
+            maxLength="35"
+            pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$"
+            onInvalid={e => e.target.setCustomValidity('You must write minimum 4 letters. ')}
             required
           />
         </label>
         <label>CHOOSE A REQUEST TYPE
            <select
-             name="reqType" 
-             value={inputs.reqType = "general" || ""} 
+             name="reqType"
+             value={inputs.reqType || "general"} 
              onChange={handleChange}
            >
               <option value="general">General Question</option>
@@ -59,6 +72,10 @@ function Support(props) {
             name="subject" 
             value={inputs.subject || ""} 
             onChange={handleChange}
+            maxLength="35"
+            // minLength="4"
+            pattern="[a-z].{4,}"
+            // onInvalid={e => e.target.setCustomValidity('You must write minimum 4 letters. Only alphabet allowed. ')}
             required 
           />
         </label>
