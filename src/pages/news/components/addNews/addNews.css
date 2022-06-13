@@ -78,4 +78,5 @@ p {
 
 .add-news-block:hover > .add-news-block__desc {
   display: flex;
+  
 }

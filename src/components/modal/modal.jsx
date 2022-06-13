@@ -8,21 +8,36 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 function Modal(props) {
+
+  const modalToggle = () => {
+    props.showModalToggle();
+  }
+
+  const backgroundClick = (e) => {
+    e.preventDefault();
+    if (e.target === e.currentTarget) {
+        props.showModalToggle();
+    }
+  }
+  
   return (
-    <div className={`modal-block ${props.showModal ? "modal-block--active" : ""}`}>
+    <div 
+      onClick={e => backgroundClick(e)}
+      className={`modal-block ${props.showModal ? "modal-block--active" : ""}`}
+    >
       <div className="modal-block__nav">
         <header>
           <GamepadIcon />
-          <span onClick={()=>props.showModalToggle()}>
+          <span onClick={modalToggle}>
             <CloseIcon />
           </span>
         </header>
-        <nav onClick={()=>props.showModalToggle()}>
-          <Link to="/"> Home </Link>
-          <Link to="/news"> News </Link>
-          <Link to="/game"> Game </Link>
-          <Link to="/heroes"> Heroes </Link>
-          <Link to="/support"> Support </Link>
+        <nav>
+          <Link onClick={modalToggle} to="/"> Home </Link>
+          <Link onClick={modalToggle} to="/news"> News </Link>
+          <Link onClick={modalToggle} to="/game"> Game </Link>
+          <Link onClick={modalToggle} to="/heroes"> Heroes </Link>
+          <Link onClick={modalToggle} to="/support"> Support </Link>
         </nav>
         <footer>
           <FacebookIcon />   

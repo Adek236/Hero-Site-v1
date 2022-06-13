@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './support.css';
 
 
@@ -8,24 +8,33 @@ function Support(props) {
   const [inputs, setInputs] = useState({
     reqType: "general"
   });
-  const [valErrors, setValErrors] = useState({})
+  const reqAlert = useRef(null);
+  const supportBlock = useRef(null);
+
   
-  const validationCheck = () => {
-    return true;
+  const requestSendedAlert = () => {
+    reqAlert.current.style.display = "flex";
+    supportBlock.current.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+    setTimeout(() => {
+      reqAlert.current.style.display = "none";
+    }, 2000);
   }
   
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    setInputs(values => ({...values, [name]: value}))
+    setInputs(values => ({...values, [name]: value}));
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputs);
-    if (!validationCheck()) return console.log("zle");
     setInputs({reqType: "general"});
-    // jesli przejdzie walidacje to resetuje form i wyswietla ze done, jak nie to co poprawic
+    requestSendedAlert();
   }
   
 	useEffect(() => {
@@ -33,12 +42,12 @@ function Support(props) {
 	}, []);
   
   return (
-    <div className="support-block">
+    <div ref={supportBlock} className="support-block">
       <section>
         <h1>Submit a request</h1>
         <h2>We're here to help you!</h2>
       </section>
-      <div className="support-block__errors">
+      <div ref={reqAlert} className="support-block__msg">
         Thanks for request!
       </div>
       <form onSubmit={handleSubmit}>
@@ -50,7 +59,8 @@ function Support(props) {
             onChange={handleChange}
             maxLength="35"
             pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$"
-            onInvalid={e => e.target.setCustomValidity('You must write minimum 4 letters. ')}
+            onInvalid={e => e.target.setCustomValidity('Please enter a valid email. ')}
+            onInput={e => e.target.setCustomValidity('')}
             required
           />
         </label>
@@ -74,8 +84,9 @@ function Support(props) {
             onChange={handleChange}
             maxLength="35"
             // minLength="4"
-            pattern="[a-z].{4,}"
-            // onInvalid={e => e.target.setCustomValidity('You must write minimum 4 letters. Only alphabet allowed. ')}
+            pattern="[a-zA-Z]{4,}"
+            onInvalid={e => e.target.setCustomValidity('You must write minimum 4 letters. Only alphabet allowed. ')}
+            onInput={e => e.target.setCustomValidity('')}
             required 
           />
         </label>
