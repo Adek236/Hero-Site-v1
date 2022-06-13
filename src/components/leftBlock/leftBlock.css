@@ -14,8 +14,8 @@
 }
 
 .left-block__logo {
-  border-bottom: 1px solid rgb(214, 214, 214, 0.1);
-  border-right: 1px solid rgb(214, 214, 214, 0.1);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
   display: flex;
   flex-grow: 1;
   max-height: 10%;
@@ -29,7 +29,7 @@
 }
 
 .left-block__socials {
-  border-right: 1px solid rgb(214, 214, 214, 0.1);
+  border-right: 1px solid var(--border-color);
 /*   border-left: 1px solid rgb(214, 214, 214, 0.1); */
   display: flex;
   flex-grow: 1;
@@ -49,6 +49,22 @@
 .left-block__socials svg:hover {
   color: rgb(249, 118, 118);
   cursor: pointer;
+}
+
+.left-block__socials 
+a {
+  color: #d1d1d1;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.left-block__socials 
+a:hover {
+  cursor: pointer;
+  color: rgb(249, 118, 118);
 }
 
 /* .left-block__btn {

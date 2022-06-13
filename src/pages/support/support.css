@@ -15,6 +15,7 @@ label {
 /*   font-weight: 600; */
   padding-top: 5%;
   overflow-y: scroll;
+  animation: appearAnnimation 2s forwards;
 }
 
 .support-block__msg {

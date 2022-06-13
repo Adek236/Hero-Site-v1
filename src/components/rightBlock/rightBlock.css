@@ -12,7 +12,7 @@
 
 .right-block--bg {
   background: rgb(6, 23, 30, 0.2);
-  border-left: 1px solid rgb(214, 214, 214, 0.1);
+  border-left: 1px solid var(--border-color);
   backdrop-filter: blur(8px);
 }
 
@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
   
-  border-bottom: 1px solid rgb(214, 214, 214, 0.1);  
+  border-bottom: 1px solid var(--border-color);  
 }
 
 .right-block__menu svg {

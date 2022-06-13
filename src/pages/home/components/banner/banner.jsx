@@ -20,11 +20,13 @@ function Banner() {
        </video>
       <div className="banner__video--mod"></div>
       <div className="banner__box">
-        <div className="banner__box__logo">Hero <span>G</span>ame</div>  
-        <div 
+        <h1 className="banner__box__logo">Hero <span>G</span>ame</h1>  
+        <button 
           className="banner__box__btn"
           onClick={handleOnClick}
-        >Let's play...</div>  
+        >
+          Let's play...
+        </button>  
       </div>
     </div>
      

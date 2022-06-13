@@ -1,5 +1,6 @@
 import React from 'react';
 import './leftBlock.css';
+import { Link } from "react-router-dom";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -15,6 +16,7 @@ function LeftBlock() {
         <GamepadIcon />   
       </div>
       <div className="left-block__socials">
+       <Link to="/credits"> CREDITS </Link>
        <FacebookIcon />   
        <InstagramIcon />   
        <TwitterIcon />   

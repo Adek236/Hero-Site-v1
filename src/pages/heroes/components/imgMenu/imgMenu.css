@@ -7,8 +7,7 @@
   height: 100%;
   overflow-y: auto;
 /*   background: green; */
-/*   padding: 0.1rem; */
-  
+  padding: 0.1rem;
 }
 
 .img-menu__el {
@@ -20,7 +19,7 @@
   position: relative;
   cursor: pointer;
 /*   background-color: rgb(186, 105, 105, 0.1);  */
-  border: 1px solid rgb(214, 214, 214, 0.1);
+  border: 1px solid var(--border-color);
 }
 
 .img-menu__el:hover {
@@ -41,7 +40,6 @@
   pointer-events: none;
 /*   border: 1px solid rgb(214, 214, 214, 0.1); */
   filter: drop-shadow(5px 5px 4px #000000);
-  
 }
 
 .img-menu__el-bg {
@@ -52,7 +50,6 @@
   background-image: linear-gradient(to right, rgb(255,0,0,0.8),rgb(255,0,0,0.0)); */
   opacity: 0.7;
   z-index: 2;
-  
 }
 
 .img-menu__el:hover > .img-menu__el-bg {

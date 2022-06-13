@@ -1,21 +1,28 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './imgMenu.css';
 
 function ImgMenu(props) {
+
+   const myRef = useRef(null)
+
+   const executeScroll = (e) => e.target.scrollIntoView({behavior: "smooth", block: "end", inline: "end"});
+  
 	return (
 		<div className="img-menu">
 			{props.data.map(obj => (
 				<div
+          // ref={myRef}
 					key={obj.id}
 					className={
 							props.idActiveAvatar === obj.id
 								? 'img-menu__el'
 								: 'img-menu__el img-menu__el--brightness'
 						}
-					onClick={() => {
+					onClick={(e) => {
             props.setIdActiveAvatar(obj.id);
             // TODO: if whichbtn is 0 do not this \/
             props.setWhichHeroBtnsActiv(0);
+            executeScroll(e);
           }}
 				>
 					<img src={obj.avatar} />

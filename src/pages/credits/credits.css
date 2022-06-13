@@ -1,0 +1,21 @@
+.credits-block {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: appearAnnimation 2s forwards;
+}
+
+.credits-block
+a {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
+.credits-block
+a:hover {
+  cursor: pointer;
+  color: white;
+}

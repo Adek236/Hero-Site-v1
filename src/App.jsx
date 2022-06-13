@@ -11,6 +11,7 @@ import Home from './pages/home/home';
 import News from './pages/news/news';
 import Game from './pages/game/game';
 import Support from './pages/support/support';
+import Credits from './pages/credits/credits';
 
 function App() {
   const [showHeroBtns, setShowHeroBtns] = useState(false);
@@ -76,6 +77,15 @@ function App() {
                 path='/support'
                 element={
                   <Support
+                    setShowHeroBtns={setShowHeroBtns}
+                  />
+                }
+              />
+              <Route
+                exact
+                path='/credits'
+                element={
+                  <Credits
                     setShowHeroBtns={setShowHeroBtns}
                   />
                 }

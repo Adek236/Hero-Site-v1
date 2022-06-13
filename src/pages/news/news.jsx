@@ -48,6 +48,4 @@ function News(props) {
   );
 }
 
-          // <img src="https://res.cloudinary.com/yaif/image/upload/v1653547319/133Z_2106.w026.n002.491B.p1.491_ik1fyz.jpg" alt="Night forest with moon"/>  
-
 export default News;

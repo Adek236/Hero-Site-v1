@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './support.css';
 
-
-// https://stackabuse.com/how-to-scroll-to-top-in-react-with-a-button-component/
-
 function Support(props) {
   const [inputs, setInputs] = useState({
     reqType: "general"

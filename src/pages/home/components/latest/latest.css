@@ -9,7 +9,7 @@
 /*   flex-wrap: wrap; */
   max-height: 100%;
 /*   background: blue; */
-  border: 1px solid rgb(214, 214, 214, 0.1); 
+  border: 1px solid var(--border-color); 
   background: rgb(0, 0, 0, 0.4);
   animation: appearAnnimation 3000ms forwards;
 }
@@ -17,7 +17,7 @@
 
 
 .home-latest-block--border {
-  border-right: 1px solid rgb(214, 214, 214, 0.1); 
+  border-right: 1px solid var(--border-color); 
 }
 
 .home-latest-block img {
