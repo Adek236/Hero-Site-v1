@@ -26,6 +26,4 @@ function LeftBlock() {
   );
 }
 
-// <div className="left-block__btn">c</div>
-
 export default LeftBlock;

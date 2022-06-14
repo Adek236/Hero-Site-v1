@@ -4,7 +4,7 @@ import './addNews.css';
 function AddNews(props) {
   
   return (
-          <div className="add-news-block">
+          <div tabIndex="0" className="add-news-block">
             <img src={props.data.img} alt={props.data.alt} />
             <section className="add-news-block__title">
               <h1>{props.data.title}</h1>  

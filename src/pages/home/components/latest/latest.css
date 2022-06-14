@@ -85,6 +85,12 @@
 /*   background: red; */
 }
 
+.home-latest-block__info-box__title
+a {
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
 .home-latest-block__info-box__desc {
 /*   display: flex; */
   align-items: flex-end;

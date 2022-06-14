@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
 import './latest.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 
 function Latest(props) {
@@ -9,7 +9,7 @@ function Latest(props) {
   const handleOnClick = useCallback(() => navigate('/news', {replace: true}), [navigate]);
   
   return (
-    <div 
+    <div
       className="home-latest-block"
       onClick={handleOnClick}
     >
@@ -24,7 +24,7 @@ function Latest(props) {
           </div>
         </div>
         <div className="home-latest-block__info-box__title">
-          {props.data.title}
+          <Link to="/news">{props.data.title}</Link>
         </div>
         <div className="home-latest-block__info-box__desc">
           <p>{props.data.short_desc}</p>

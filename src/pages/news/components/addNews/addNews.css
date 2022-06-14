@@ -5,6 +5,8 @@
   position: relative;
   border: 1px solid var(--border-color);
   animation: appearAnnimation 2s forwards;
+/*   overflow-y: auto; */
+  z-index: 1;
 }
 
 .add-news-block:hover {
@@ -16,6 +18,7 @@
 img {
   object-fit: cover;
   object-position: 50% 30%;
+/*   position: fixed; */
 }
 
 .add-news-block__title {
@@ -31,11 +34,12 @@ img {
   z-index: 2;
 }
 
-.add-news-block:hover > .add-news-block__title {
+.add-news-block:hover > .add-news-block__title,
+.add-news-block:focus > .add-news-block__title {
   bottom: 80%; 
 }
-
-.add-news-block:hover > img {
+.add-news-block:hover > img,
+.add-news-block:focus > img {
   animation: shadeAnimation 1s forwards;
 }
 
@@ -69,14 +73,14 @@ h2 {
   overflow-y: scroll;
   animation: appearAnnimation 4s forwards;
 }
-
+  
 .add-news-block__desc 
 p {
   text-indent: 5%;
   margin-bottom: 3%;
 }
 
-.add-news-block:hover > .add-news-block__desc {
+.add-news-block:hover > .add-news-block__desc,
+.add-news-block:focus > .add-news-block__desc {
   display: flex;
-  
 }
