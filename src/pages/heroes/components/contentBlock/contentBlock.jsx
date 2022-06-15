@@ -22,7 +22,7 @@ function ContentBlock(props) {
         <section className="content-block__text-title">
           <p>{props.objData.name}</p>
         </section>
-        <section 
+        <section
           ref={textDesc} 
           className="content-block__text-desc"
         >

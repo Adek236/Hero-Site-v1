@@ -17,9 +17,16 @@ function NaviBar(props) {
       <div className="navi-bar__hidden">
         <GamepadIcon />
       </div>
-      <div className="navi-bar__hidden navi-bar__hidden--menu"
+      <div 
+        tabIndex="0"
+        className="navi-bar__hidden navi-bar__hidden--menu"
         onClick={()=>props.showModalToggle()}
-      >  
+        onKeyDown={event => {
+                if (event.key === 'Enter') {
+                  props.showModalToggle()
+                }
+              }}
+      >
         <MenuIcon />
       </div>
     </nav>

@@ -1,9 +1,7 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './imgMenu.css';
 
 function ImgMenu(props) {
-
-   const myRef = useRef(null)
 
    const executeScroll = (e) => e.target.scrollIntoView({behavior: "smooth", block: "end", inline: "end"});
   
@@ -11,13 +9,19 @@ function ImgMenu(props) {
 		<div className="img-menu">
 			{props.data.map(obj => (
 				<div
-          // ref={myRef}
+          tabIndex="0"
 					key={obj.id}
 					className={
 							props.idActiveAvatar === obj.id
 								? 'img-menu__el'
 								: 'img-menu__el img-menu__el--brightness'
 						}
+          onFocus={(e) => {
+            props.setIdActiveAvatar(obj.id);
+            // TODO: if whichbtn is 0 do not this \/
+            props.setWhichHeroBtnsActiv(0);
+            executeScroll(e);
+          }}
 					onClick={(e) => {
             props.setIdActiveAvatar(obj.id);
             // TODO: if whichbtn is 0 do not this \/

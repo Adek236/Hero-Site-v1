@@ -17,7 +17,7 @@ function App() {
   const [showHeroBtns, setShowHeroBtns] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [whichHeroBtnsActiv, setWhichHeroBtnsActiv] = useState(0);
-
+  
   const showModalToggle = () => {
     setShowModal(prev => !prev);
   }
