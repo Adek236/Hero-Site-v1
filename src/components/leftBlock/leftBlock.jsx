@@ -17,9 +17,9 @@ function LeftBlock() {
       </div>
       <div className="left-block__socials">
        <Link to="/credits"> CREDITS </Link>
-       <FacebookIcon />   
-       <InstagramIcon />   
-       <TwitterIcon />   
+       <Link to="/"> <FacebookIcon /> </Link>   
+       <Link to="/"> <InstagramIcon /> </Link> 
+       <Link to="/"> <TwitterIcon /> </Link>    
       </div>
       
     </div>

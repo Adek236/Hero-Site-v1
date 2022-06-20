@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './modal.css';
 import { Link } from "react-router-dom";
 import CloseIcon from '@mui/icons-material/Close';
@@ -8,6 +8,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
 function Modal(props) {
+
+  const closeButtonRef = useRef(null);
 
   const modalToggle = () => {
     props.showModalToggle();
@@ -22,13 +24,24 @@ function Modal(props) {
   
   return (
     <div 
-      onClick={e => backgroundClick(e)}
       className={`modal-block ${props.showModal ? "modal-block--active" : ""}`}
+      tabIndex="0"
+      onClick={e => backgroundClick(e)}
+      onAnimationEnd={() => closeButtonRef.current.focus()}
     >
       <div className="modal-block__nav">
         <header>
           <GamepadIcon />
-          <span onClick={modalToggle}>
+          <span 
+            tabIndex="0"
+            ref={closeButtonRef}
+            onClick={modalToggle}
+            onKeyDown={e => {
+                if (e.key === 'Enter') {
+                  modalToggle();
+                }
+              }}
+          >
             <CloseIcon />
           </span>
         </header>
@@ -40,9 +53,9 @@ function Modal(props) {
           <Link onClick={modalToggle} to="/support"> Support </Link>
         </nav>
         <footer>
-          <FacebookIcon />   
-          <InstagramIcon />   
-          <TwitterIcon />
+          <Link onClick={modalToggle} to="/"> <FacebookIcon /> </Link>   
+          <Link onClick={modalToggle} to="/"> <InstagramIcon /> </Link> 
+          <Link onClick={modalToggle} to="/"> <TwitterIcon /> </Link>  
         </footer>
       </div>
     </div>

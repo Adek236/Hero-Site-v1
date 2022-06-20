@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import LeftBlock from './components/leftBlock/leftBlock';
@@ -17,9 +17,23 @@ function App() {
   const [showHeroBtns, setShowHeroBtns] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [whichHeroBtnsActiv, setWhichHeroBtnsActiv] = useState(0);
+
+  const closeButtonRef = useRef(null);
   
   const showModalToggle = () => {
     setShowModal(prev => !prev);
+    // setFocusCloseButton();
+  }
+
+  const setFocusCloseButton = () => {
+    console.log("close")
+
+    closeButtonRef.addEventListener('transitionend', () => {
+      closeButtonRef.current.focus();
+    });
+    
+      
+    
   }
 
   return (
@@ -102,6 +116,7 @@ function App() {
           setWhichHeroBtnsActiv={setWhichHeroBtnsActiv}
         />
         <Modal
+          closeButtonRef={closeButtonRef}
           showModal={showModal}
           showModalToggle={showModalToggle}
         />

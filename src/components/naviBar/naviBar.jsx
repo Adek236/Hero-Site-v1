@@ -23,7 +23,7 @@ function NaviBar(props) {
         onClick={()=>props.showModalToggle()}
         onKeyDown={e => {
                 if (e.key === 'Enter') {
-                  props.showModalToggle()
+                  props.showModalToggle();
                 }
               }}
       >

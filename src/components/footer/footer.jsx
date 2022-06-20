@@ -9,9 +9,9 @@ function Footer() {
   return (
       <div className="footer footer--bg">
        <Link to="/credits"> CREDITS </Link> 
-       <FacebookIcon />   
-       <InstagramIcon />   
-       <TwitterIcon />   
+       <Link to="/"> <FacebookIcon /> </Link>   
+       <Link to="/"> <InstagramIcon /> </Link> 
+       <Link to="/"> <TwitterIcon /> </Link>  
       </div>
   );
 }

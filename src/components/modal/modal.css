@@ -77,7 +77,15 @@ footer {
 }
 
 .modal-block__nav 
-footer 
+footer
+a
+svg {
+  color: #d1d1d1;
+}
+
+.modal-block__nav 
+footer
+a
 svg:hover {
   cursor: pointer;
   color: white;

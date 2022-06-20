@@ -38,9 +38,18 @@ img {
 .add-news-block:focus > .add-news-block__title {
   bottom: 80%; 
 }
+
+.add-news-block__title--focus {
+  bottom: 80%; 
+}
+
 .add-news-block:hover > img,
 .add-news-block:focus > img {
   animation: shadeAnimation 1s forwards;
+}
+
+.add-news-block__img--focus {
+  filter: brightness(25%);
 }
 
 .add-news-block__title 
@@ -82,5 +91,9 @@ p {
 
 .add-news-block:hover > .add-news-block__desc,
 .add-news-block:focus > .add-news-block__desc {
+  display: flex;
+}
+
+.add-news-block__desc--focus {
   display: flex;
 }
