@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './heroes.css';
 import ImgMenu from './components/imgMenu/imgMenu';
 import ContentBlock from './components/contentBlock/contentBlock';
@@ -6,9 +6,14 @@ import { heroes } from '../../data/data';
 
 function Heroes(props) {
   const [idActiveAvatar, setIdActiveAvatar] = useState(1);
+  const readMoreButtonRef = useRef(null);
 
   const getObjFromData = () => {
     return heroes.find(obj => obj.id === idActiveAvatar)
+  }
+
+  const setFocusReadMoreButton = () => {
+    readMoreButtonRef.current.focus();
   }
   
 	useEffect(() => {
@@ -17,19 +22,20 @@ function Heroes(props) {
   
   return (
     <div className="heroes-block">
-        <ImgMenu 
+        <ImgMenu
+          setFocusReadMoreButton={setFocusReadMoreButton}
           idActiveAvatar={idActiveAvatar}
           setIdActiveAvatar={setIdActiveAvatar}
           data={heroes}
           setWhichHeroBtnsActiv={props.setWhichHeroBtnsActiv}
         />
-        <ContentBlock 
+        <ContentBlock
+          readMoreButtonRef={readMoreButtonRef}
           objData={getObjFromData()} 
           whichHeroBtnsActiv={props.whichHeroBtnsActiv}
           setWhichHeroBtnsActiv={props.setWhichHeroBtnsActiv}
           />
       </div>
-    
   );
 }
 

@@ -3,10 +3,12 @@ import './imgMenu.css';
 
 function ImgMenu(props) {
 
-   const executeScroll = (e) => e.target.scrollIntoView({behavior: "smooth", block: "end", inline: "end"});
+  const executeScroll = (e) => e.target.scrollIntoView({behavior: "smooth", block: "end", inline: "end"});
   
 	return (
-		<div className="img-menu">
+		<div 
+      className="img-menu"
+    >
 			{props.data.map(obj => (
 				<div
           tabIndex="0"
@@ -28,6 +30,11 @@ function ImgMenu(props) {
             props.setWhichHeroBtnsActiv(0);
             executeScroll(e);
           }}
+          onKeyDown={e => {
+                if (e.key === 'Enter') {
+                  props.setFocusReadMoreButton();
+                }
+              }}
 				>
 					<img src={obj.avatar} />
 					<div
@@ -54,7 +61,11 @@ function ImgMenu(props) {
 	);
 }
 
-
+// e => {
+//                 if (e.key === 'Enter') {
+//                   props.showModalToggle()
+//                 }
+//               }
 // style={{marginRight: spacing + 'em'}}
 
 export default ImgMenu;

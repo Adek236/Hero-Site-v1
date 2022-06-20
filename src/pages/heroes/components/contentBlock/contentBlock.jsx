@@ -27,7 +27,16 @@ function ContentBlock(props) {
           className="content-block__text-desc"
         >
           <p>{props.objData.desc[props.whichHeroBtnsActiv]}</p>
-          <span onClick={() => nextDesc()}>Read more...</span>
+          <span
+            ref={props.readMoreButtonRef}
+            tabIndex="0"
+            onClick={() => nextDesc()}
+            onKeyDown={e => {
+                if (e.key === 'Enter') {
+                  nextDesc();
+                }
+              }}
+          >Read more...</span>
         </section>
       </div>
       <div className="content-block__img">
