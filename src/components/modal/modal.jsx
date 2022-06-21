@@ -23,7 +23,7 @@ function Modal(props) {
   }
   
   return (
-    <div 
+    <div
       className={`modal-block ${props.showModal ? "modal-block--active" : ""}`}
       tabIndex="0"
       onClick={e => backgroundClick(e)}
@@ -32,7 +32,9 @@ function Modal(props) {
       <div className="modal-block__nav">
         <header>
           <GamepadIcon />
-          <span 
+          <span
+            role="button"
+            aria-label="Close modal"
             tabIndex="0"
             ref={closeButtonRef}
             onClick={modalToggle}
@@ -46,11 +48,23 @@ function Modal(props) {
           </span>
         </header>
         <nav>
-          <Link onClick={modalToggle} to="/"> Home </Link>
-          <Link onClick={modalToggle} to="/news"> News </Link>
-          <Link onClick={modalToggle} to="/game"> Game </Link>
-          <Link onClick={modalToggle} to="/heroes"> Heroes </Link>
-          <Link onClick={modalToggle} to="/support"> Support </Link>
+          <ul>
+            <li>
+              <Link onClick={modalToggle} to="/"> Home </Link>  
+            </li>
+            <li>
+              <Link onClick={modalToggle} to="/news"> News </Link>
+            </li>
+            <li>
+              <Link onClick={modalToggle} to="/game"> Game </Link>
+            </li>
+            <li>
+              <Link onClick={modalToggle} to="/heroes"> Heroes </Link>
+            </li>
+            <li>
+              <Link onClick={modalToggle} to="/support"> Support </Link>
+            </li>
+          </ul>
         </nav>
         <footer>
           <Link onClick={modalToggle} to="/"> <FacebookIcon /> </Link>   
@@ -62,6 +76,11 @@ function Modal(props) {
   );
 }
 
+          // <Link onClick={modalToggle} to="/"> Home </Link>
+          // <Link onClick={modalToggle} to="/news"> News </Link>
+          // <Link onClick={modalToggle} to="/game"> Game </Link>
+          // <Link onClick={modalToggle} to="/heroes"> Heroes </Link>
+          // <Link onClick={modalToggle} to="/support"> Support </Link>
 
 
 export default Modal;

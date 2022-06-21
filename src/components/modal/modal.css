@@ -48,14 +48,34 @@ nav {
 
 .modal-block__nav 
 nav 
+ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-block__nav 
+nav 
+li {
+  display: flex;
+  flex-grow: 1;
+  max-height: 10%;
+  width: 100%;
+  justify-content: center;
+}
+
+.modal-block__nav 
+nav 
 a {
   display:flex;
-/*   margin-bottom: 1rem; */
-  width: 90%;
-  height: 10%;
-  text-decoration: none;
   align-items: center;
   justify-content:center;
+  width: 90%;
+  height: 100%;
+  text-decoration: none;
   border-radius: 0.25rem;
   font-size: clamp(1rem, 3.0vh, 3rem);
   color: #d1d1d1;
