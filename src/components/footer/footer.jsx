@@ -7,12 +7,25 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 function Footer() {
   return (
-      <div className="footer footer--bg">
-       <Link to="/credits"> CREDITS </Link> 
-       <Link to="/"> <FacebookIcon /> </Link>   
-       <Link to="/"> <InstagramIcon /> </Link> 
-       <Link to="/"> <TwitterIcon /> </Link>  
-      </div>
+      <nav
+        aria-label="Secondary"
+        className="footer footer--bg"
+      >
+        <ul>
+          <li>
+           <Link to="/credits"> CREDITS </Link> 
+          </li>
+          <li>
+           <Link to="/"> <FacebookIcon /> </Link>   
+          </li>
+          <li>
+           <Link to="/"> <InstagramIcon /> </Link> 
+          </li>
+          <li>
+           <Link to="/"> <TwitterIcon /> </Link>  
+          </li>
+        </ul>
+      </nav>
   );
 }
 

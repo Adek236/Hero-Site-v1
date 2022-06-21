@@ -7,26 +7,34 @@
 /*   max-height: 100%; */
 }
 
+.footer ul {
+  display: flex;
+}
+
+.footer li {
+  display: flex;
+  align-items: center; 
+}
+
 .footer--bg {
   background: rgb(6, 23, 30, 0.2);
   border-top: 1px solid var(--border-color);
-/*   border-left: 1px solid rgb(214, 214, 214, 0.1); */
-/*   border-right: 1px solid rgb(214, 214, 214, 0.1); */
 }
 
 .footer svg {
-  margin-inline: 0.2rem;
   color: rgb(174, 167, 167);
   font-size: clamp(1rem, 1.5vw, 2.0rem);
 }
 
 .footer svg:hover {
-  color: rgb(249, 118, 118);
+  color: white;
   cursor: pointer;
 }
 
 .footer
 a {
+  display: flex;
+  justify-content: center;
   color: #d1d1d1;
   text-decoration: none;
   letter-spacing: 1px;
@@ -36,5 +44,5 @@ a {
 .footer
 a:hover {
   cursor: pointer;
-  color: rgb(249, 118, 118);
+  color: white;
 }

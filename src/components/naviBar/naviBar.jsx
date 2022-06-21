@@ -6,7 +6,8 @@ import GamepadIcon from '@mui/icons-material/Gamepad';
 
 function NaviBar(props) {
   return (
-    <nav 
+    <nav
+      aria-label="Primary"
       className="navi-bar navi-bar--font navi-bar--bg"
     >
       <ul>
@@ -31,7 +32,7 @@ function NaviBar(props) {
       </div>
       <div
         role="button"
-        aria-label="Open modal with navigation"
+        aria-label="Open navigation"
         tabIndex="0"
         className="navi-bar__hidden navi-bar__hidden--menu"
         onClick={()=>props.showModalToggle()}
