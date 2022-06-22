@@ -47,7 +47,9 @@ function Modal(props) {
             <CloseIcon />
           </span>
         </header>
-        <nav>
+        <nav
+          aria-label="Priority"
+        >
           <ul>
             <li>
               <Link onClick={modalToggle} to="/"> Home </Link>  
@@ -67,20 +69,25 @@ function Modal(props) {
           </ul>
         </nav>
         <footer>
-          <Link onClick={modalToggle} to="/"> <FacebookIcon /> </Link>   
-          <Link onClick={modalToggle} to="/"> <InstagramIcon /> </Link> 
-          <Link onClick={modalToggle} to="/"> <TwitterIcon /> </Link>  
+          <nav
+            aria-label="Secondary"  
+          >
+            <ul>
+              <li>
+                <Link onClick={modalToggle} to="/"> <FacebookIcon /> </Link>   
+              </li>
+              <li>
+                <Link onClick={modalToggle} to="/"> <InstagramIcon /> </Link> 
+              </li>
+              <li>
+                <Link onClick={modalToggle} to="/"> <TwitterIcon /> </Link>  
+              </li>
+            </ul>
+          </nav>
         </footer>
       </div>
     </div>
   );
 }
-
-          // <Link onClick={modalToggle} to="/"> Home </Link>
-          // <Link onClick={modalToggle} to="/news"> News </Link>
-          // <Link onClick={modalToggle} to="/game"> Game </Link>
-          // <Link onClick={modalToggle} to="/heroes"> Heroes </Link>
-          // <Link onClick={modalToggle} to="/support"> Support </Link>
-
 
 export default Modal;

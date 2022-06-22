@@ -15,28 +15,60 @@ function RightBlock(props) {
     return (
       <div className="hero-btns">
         <div 
+          role="button"
+          aria-labelledby="btn-title1"
+          tabIndex="0"
           className={props.whichHeroBtnsActiv == 0 ? "hero-btn-activated" : ""}
           onClick={()=> activatedBtn(0)}
+          onKeyDown={e => {
+                if (e.key === 'Enter') {
+                  activatedBtn(0);
+                }
+              }}
         >
-          <p>Overview</p>
+          <p id="btn-title1">Overview</p>
         </div>
         <div
+          role="button"
+          aria-labelledby="btn-title2"
+          tabIndex="0"
           className={props.whichHeroBtnsActiv == 1 ? "hero-btn-activated" : ""}
           onClick={()=> activatedBtn(1)}
+          onKeyDown={e => {
+                if (e.key === 'Enter') {
+                  activatedBtn(1);
+                }
+              }}
         >
-          <p>Lore</p>
+          <p id="btn-title2">Lore</p>
         </div>
-        <div 
+        <div
+          role="button"
+          aria-labelledby="btn-title3"
+          tabIndex="0"
           className={props.whichHeroBtnsActiv == 2 ? "hero-btn-activated" : ""}
           onClick={()=> activatedBtn(2)}
+          onKeyDown={e => {
+                if (e.key === 'Enter') {
+                  activatedBtn(2);
+                }
+              }}
         >
-          <p>Abilities</p>
+          <p id="btn-title3">Abilities</p>
         </div>
-        <div 
+        <div
+          role="button"
+          aria-labelledby="btn-title4"
+          tabIndex="0"
           className={props.whichHeroBtnsActiv == 3 ? "hero-btn-activated" : ""}
           onClick={()=> activatedBtn(3)}
+          onKeyDown={e => {
+                if (e.key === 'Enter') {
+                  activatedBtn(3);
+                }
+              }}
         >
-          <p>Relations</p>
+          <p id="btn-title4">Relations</p>
         </div>
       </div>
     );

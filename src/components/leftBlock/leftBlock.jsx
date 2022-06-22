@@ -8,7 +8,6 @@ import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
 import GamepadIcon from '@mui/icons-material/Gamepad';
 
-
 function LeftBlock() {
   return (
     <div className="left-block left-block--bg">

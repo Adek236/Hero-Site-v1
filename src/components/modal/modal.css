@@ -98,6 +98,22 @@ footer {
 
 .modal-block__nav 
 footer
+nav
+ul {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.modal-block__nav 
+footer
+nav
+li {
+  height: 100%;
+}
+
+.modal-block__nav 
+footer
 a
 svg {
   color: #d1d1d1;
