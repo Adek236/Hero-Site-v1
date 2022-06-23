@@ -28,8 +28,10 @@ function ContentBlock(props) {
         >
           <p>{props.objData.desc[props.whichHeroBtnsActiv]}</p>
           <span
-            ref={props.readMoreButtonRef}
+            role="button"
+            aria-label="Read more about hero"
             tabIndex="0"
+            ref={props.readMoreButtonRef}
             onClick={() => nextDesc()}
             onKeyDown={e => {
                 if (e.key === 'Enter') {
@@ -40,7 +42,7 @@ function ContentBlock(props) {
         </section>
       </div>
       <div className="content-block__img">
-        <img src={props.objData.img}></img>
+        <img src={props.objData.img} alt={props.objData.alt}></img>
       </div>
     </div>
   );

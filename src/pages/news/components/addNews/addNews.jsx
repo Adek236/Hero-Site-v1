@@ -10,7 +10,7 @@ function AddNews(props) {
   }
 
   return (
-    <div
+    <article
       tabIndex="0"
       className="add-news-block"
       onFocus={()=>setFocusedNews(true)}
@@ -25,14 +25,17 @@ function AddNews(props) {
         src={props.data.img} 
         alt={props.data.alt} />
       <section
+        aria-label="title"
+        tabIndex="0"
         className={focusedNews ? "add-news-block__title add-news-block__title--focus" : "add-news-block__title"}
       >
         <h1>{props.data.title}</h1>
         <h2>{props.data.category}</h2>
       </section>
       <section
-        ref={textDescRef}
+        aria-label="description"
         tabIndex="0"
+        ref={textDescRef}
         className={focusedNews ? "add-news-block__desc add-news-block__desc--focus" : "add-news-block__desc"}
         onKeyDown={e => {
           if (e.key === 'Tab') {
@@ -47,7 +50,7 @@ function AddNews(props) {
           {props.data.long_desc}
         </p>
       </section>
-    </div>
+    </article>
   );
 }
 

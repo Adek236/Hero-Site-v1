@@ -3,7 +3,11 @@ import './imgMenu.css';
 
 function ImgMenu(props) {
 
-  const executeScroll = (e) => e.target.scrollIntoView({behavior: "smooth", block: "end", inline: "end"});
+  const executeScroll = (e) => e.target.scrollIntoView({
+    behavior: "smooth", 
+    block: "end", 
+    inline: "end"
+  });
   
 	return (
 		<div 
@@ -36,7 +40,7 @@ function ImgMenu(props) {
                 }
               }}
 				>
-					<img src={obj.avatar} />
+					<img src={obj.avatar} alt={obj.alt}/>
 					<div
 						className={
 							props.idActiveAvatar === obj.id
@@ -60,12 +64,5 @@ function ImgMenu(props) {
 		</div>
 	);
 }
-
-// e => {
-//                 if (e.key === 'Enter') {
-//                   props.showModalToggle()
-//                 }
-//               }
-// style={{marginRight: spacing + 'em'}}
 
 export default ImgMenu;
