@@ -16,7 +16,6 @@
   width: 60%;
   height: 100vh;
   background: black;
-/*   transform: translateX(100%); */
   animation: showModalAnimation 0.5s;
 }
 
@@ -34,7 +33,7 @@ header {
 header 
 span:hover {
   cursor: pointer;
-  color: white;
+  color: var(--font-color-hover);
 }
 
 .modal-block__nav 
@@ -78,10 +77,10 @@ a {
   text-decoration: none;
   border-radius: 0.25rem;
   font-size: clamp(1rem, 3.0vh, 3rem);
-  color: #d1d1d1;
+  color: var(--font-color-primary);
 }
 
-.modal-block__nav 
+.modal-block__nav >
 nav 
 a:hover {
   background: #383838;
@@ -116,7 +115,7 @@ li {
 footer
 a
 svg {
-  color: #d1d1d1;
+  color: var(--font-color-primary);
 }
 
 .modal-block__nav 
@@ -124,7 +123,7 @@ footer
 a
 svg:hover {
   cursor: pointer;
-  color: white;
+  color: var(--font-color-hover);
 }
 
 @keyframes showModalAnimation {

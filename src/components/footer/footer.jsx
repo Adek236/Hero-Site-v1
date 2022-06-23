@@ -29,6 +29,4 @@ function Footer() {
   );
 }
 
-// <div className="left-block__btn">c</div>
-
 export default Footer;

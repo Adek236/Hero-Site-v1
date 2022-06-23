@@ -12,7 +12,6 @@ label {
   position: relative;
   flex-grow: 1;
   justify-content: flex-start;
-/*   font-weight: 600; */
   padding-top: 5%;
   overflow-y: scroll;
   animation: appearAnnimation 2s forwards;
@@ -70,8 +69,6 @@ textarea,
 select {
   width: 100%;
   margin-top: 0.4rem;
-/*   min-width: 200px; */
-/*   max-width: 400px; */
   height: 50px;
   padding: 0.5rem;
   background: #d1d1d1;

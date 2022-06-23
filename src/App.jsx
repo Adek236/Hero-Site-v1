@@ -22,18 +22,6 @@ function App() {
   
   const showModalToggle = () => {
     setShowModal(prev => !prev);
-    // setFocusCloseButton();
-  }
-
-  const setFocusCloseButton = () => {
-    console.log("close")
-
-    closeButtonRef.addEventListener('transitionend', () => {
-      closeButtonRef.current.focus();
-    });
-    
-      
-    
   }
 
   return (

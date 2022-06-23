@@ -15,8 +15,6 @@
   background: rgb(6, 23, 30, 0.2);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border-color);
-/*   border-left: 1px solid rgb(214, 214, 214, 0.1); */
-/*   border-right: 1px solid rgb(214, 214, 214, 0.1); */
 }
 
 .navi-bar 
@@ -32,11 +30,11 @@ ul {
 }
 
 .navi-bar a:hover {
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid var(--font-color-primary);
 }
 
 .navi-bar a {
-  color: #d1d1d1;
+  color: var(--font-color-primary);
   text-decoration: none;
 }
 
@@ -46,14 +44,13 @@ ul {
 }
 
 .navi-bar__hidden--menu svg:hover {
-  color: white;
+  color: var(--font-color-hover);
   cursor: pointer;
 }
 
 @media only screen and (max-width: 844px) {
   .navi-bar {
     justify-content: space-between;
-/*     padding-right: 5%; */
   }
   .navi-bar a {
     display: none;

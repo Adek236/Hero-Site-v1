@@ -1,12 +1,9 @@
 .content-block {
-/*   background: rgb(0, 0, 0,0.4); */
   display: flex;
   flex-grow: 1;
   flex-direction: rows;
   max-width: 82%;
-  color: white;
-/*   background: red; */
-/*   position: relative; */
+  color: var(--font-color-primary);
   animation: appearAnnimation 2s forwards;
 }
 
@@ -17,7 +14,6 @@
   justify-content: center;
   max-width: 50%;
   position: relative;
-/*   z-index: 1;  */
 }
 
 .content-block__text-title {
@@ -30,7 +26,6 @@
   font-size: calc(1.5em + 7.0vmin);
   font-weight: 600;
   padding: 1rem;
-/*   border-bottom: 2px solid red; */
 }
 
 .content-block__text-title p {
@@ -45,8 +40,6 @@
   flex-direction: column;
   height: 70%;
   padding: 1rem;
-/*   align-text: center; */
-/*   font-size: calc(0.2em + 1.2vmin); */
   overflow-y: auto;
 }
 
@@ -80,21 +73,8 @@ span:hover {
   object-fit: cover;
   object-position: center;
   z-index: 1;
-/*   transform: translate(-8%,-6%); */
   filter: drop-shadow(5px 5px 4px #000000);
-/*   animation: appearAnnimation 1s forwards; */
 }
-
-/* .content-block__img img:hover {
-    animation: example 1s;
-}
-
-@keyframes example {
-  0% {transform: translate(-8%,-6%);}
-  50% {transform: translate(-10%,-6%);}
-  100% {transform: translate(-8%,-6%);}
-} */
-
 
 @media only screen and (orientation:portrait) {
   .content-block {
