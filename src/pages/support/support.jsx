@@ -95,7 +95,10 @@ function Support(props) {
             required
           ></textarea>
         </label>
-        <input type="submit" value="SUBMIT"/>
+        <input 
+          aria-label="Send request"
+          type="submit" 
+          value="SUBMIT"/>
       </form>
     </div>
   );
